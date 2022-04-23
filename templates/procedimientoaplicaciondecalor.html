@@ -1,0 +1,69 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Aplicacion de Calor</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        La termoterapia es la aplicación de calor con fines terapéuticos. Existen diversas formas de aplicar este calor y, en general, lo que se busca es un efecto sedante, relajante.
+                        <br>
+                        Las técnicas de termoterapia utilizan diferentes formas de calor como tratamiento, ya sea en forma sólida, semilíquida o gaseosa. Para que se considere como termoterapia, 
+                        es necesario que la temperatura del elemento aplicado sea superior a la que fisiológicamente tiene el organismo. En cuanto al máximo de temperatura, depende de la sensibilidad térmica del paciente.
+                    </i>
+                </p>
+                <br>
+                <b>Forma de aplicación de la termoterapia</b>
+                <p>
+                    <i>
+                        Como norma general podemos decir que las aplicaciones variarán entre 10-30 minutos, aunque depende de la técnica concreta que se utilice.
+                        El calor tiene efecto relajante pero, en exceso, puede provocar mareos por bajada de tensión (por ejemplo, si se aplica o en las cervicales o en la espalda). <br>
+                        Aplicaciones discontínuas, dejando un tiempo de reposo, para que la temperatura de la zona no se eleve en exceso, y no se produzcan efectos indeseables. <br>
+                        Dependiendo de la técnica que se utilice, será necesario aplicar directamente sobre la piel (aire caliente, lámpara de infrarrojos, microondas…) o será necesario emplear un paño o servilleta, 
+                        por ejemplo en el caso de que sea un sólido o semilíquido, para reducir el riesgo de quemaduras.
+                    </i>
+                </p>
+                <br>
+                <b>Efectos de la termoterapia</b>
+                <p>
+                    <i>
+                        <ul>
+                            <li><b>Vasodilatación </b><br>  Aumento del flujo de sangre a la zona (hiperemia). La hiperemia tiene efecto analgésico (reduce el dolor), favorece la nutrición de los tejidos y la eliminación de productos de deshecho.</li>
+                            <li><b>Disminución de la presión arterial</b> <br>  El calor afecta al corazón y reduce la presión sanguínea. Si baja en exceso, pueden producirse mareos, por lo que es necesario supervisar para evitarlo.</li>
+                            <li><b>Efecto sedante</b> <br>  El estímulo de calor de larga duración tiene efecto sedante, ya que favorece la relajación muscular, evita el espasmo muscular, alivia la fatiga y ralentiza la conducción nerviosa de estímulos dolorosos.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Técnicas de aplicación de la termoterapia</b>
+                <p>
+                    <i>
+                        Hay infinidad de formas de aplicar calor. Aquí algunos ejemplos:
+                        <ul>
+                            <li><b>Sólidos:</b> <br>  Mantas eléctricas (como la de la imagen superior), sacos, hot-packs… Estos últimos se calientan en microondas y conservan el calor unos 15-20 minutos. Se aplican protegiendo la zona con una toalla, y tienen la ventaja de ser adaptables a regiones como el hombro o cuello. Ideales para su uso en casa.</li>
+                            <li> <b>Semilíquidos:</b> <br> Fangos, lodos, parafina, parafangos… Se suelen aplicar en consulta, con la ventaja de que son moldeables y adaptables a regiones como la espalda completa o la mano completa (en este caso es muy utilizada la parafina).</li>
+                            <li><b>Gas:</b> <br>  Aire seco (por ejemplo utilizando un secador). Puede aliviar en algunos casos, aunque, para aplicar en casa, creo que es mejor la aplicación de sólidos. Otra variante es el vapor de agua (sauna).</li>
+                            <li><b>Radiación:</b> <br>  Lámpara de infrarrojos, microondas… Se suelen aplicar en consulta.</li>
+                        </ul>
+                    </i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

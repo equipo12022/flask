@@ -1,0 +1,74 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antitusivos</b></i></h1>
+                    <i>
+                        Antitusivos, son los fármacos utilizados habitualmente para el tratamiento de la tos y otros síntomas a menudo asociados al resfriado o la gripe, como el exceso de mucosidad o la congestión.
+                    </i>
+                </p>
+                <br>
+                <b>Antitusivos</b>
+                <p>
+                    <i>
+                        La tos está gobernada por el centro de la tos, que se encuentra en la médula.
+                        El primer paso para controlar la tos es proporcionar al tracto respiratorio la humedad necesaria tanto por ingestión de líquidos (agua, caldo, leche y zumos de frutas) como por la humidificación del aire inspirado. <br>
+                        <br>
+                        Si la tos es seca o improductiva, al carecer de interés fisiológico, a diferencia de la tos productiva, 
+                        puede ser eliminada con antitusivos. Estos actúan sobre el centro medular de la tos para controlar el reflejo. Se emplean mayoritariamente dextrometorfano, dimemorfano, codeína (menos) y cloperastina.
+                    </i>
+                </p>
+                <br>
+                <b>Farmacos:</b>
+                <p>
+                    <i>
+                        <b>Codeína. </b> <br> La codeína es un alcaloide del opio, derivado de la morfina, por lo que debe administrarse con precaución, 
+                        ya que además de controlar la tos posee un efecto depresor sobre el sistema nervioso central y puede causar depresión respiratoria,
+                        broncoconstricción, estreñimiento y reducción de la secreción bronquial, lo que supone cierto grado de contraindicación para situaciones que cursen con abundante producción de moco. 
+                        Además, no se debe olvidar su efecto de sedación, adicción o somnolencia, sobre todo si se toma conjuntamente con otros fármacos que también la producen,
+                        como antihistamínicos, analgésicos, ansiolíticos y anticolinérgicos.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>Dextrometorfano. </b> <br> Actualmente, se utiliza mucho más este fármaco, un derivado sintético de la mor- fina empleado únicamente como antitusivo por su acción selectiva sobre la tos.
+                        Se diferencia de la codeína en que no posee propiedades analgésicas y no produce ningún tipo de depresión del sistema nervioso central, evitando los numerosos efectos secundarios indeseables. 
+                        También se utiliza el dimemorfano, análogo del dextrometorfano.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>Cloperastina. </b> <br> La cloperastina es un antitusivo con diversas propiedades: anticolinérgicas, antihistamínicas y anestésicas locales.
+                        Está relacionado con algunos antihistamínicos H1. Se supone que puede presentar presentar efectos centrales, 
+                        nhibiendo el centro de la tos. Asimismo, su actividad broncodilatadora y anestésica local puede potenciar dichos efectos.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Si la tos es productiva, es decir, si va acompañada de expectoración, 
+                        no debería ser suprimida salvo que resulte tan molesta que impida conciliar el sueño o llevar una vida normal. 
+                        El motivo se debe a que la tos productiva ayuda a eliminar el esputo favoreciendo el fin de la enfermedad.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

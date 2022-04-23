@@ -1,0 +1,134 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antiacido</b></i></h1>
+                    <i>
+                        Para aliviar la acidez gástrica se han usado tradicionalmente los antiácidos. <br> 
+                        Los antiácidos ayudan a tratar la acidez gástrica (indigestión). Funcionan neutralizando el ácido gástrico que causa dicha acidez. <br>
+                        Se trata de un grupo de compuestos inorgánicos que actúan localmente y cuya acción terapéutica consiste en neutralizar el ácido clorhídrico del estómago, sin afectar a su producción. <br>
+                        Se suelen distinguir dos tipos: sistémicos y no sistémicos. Los sistémicos (como el bicarbonato sódico) son de acción rápida, poco duradera y con posible efecto rebote (ya que al reaccionar con el ácido clorhídrico, 
+                        la parte catiónica puede ser absorbida y producirse una alcalosis sistémica). <br>
+                        Los no sistémicos (sales de aluminio, magnesio y calcio) tienen una acción más lenta y sostenida y no presentan efecto rebote (la parte catiónica, en este caso, forma una sal que no se absorbe). <br>
+                        Actualmente, los antiácidos suelen indicarse para controlar el dolor asociado a la úlcera duodenal y, con mayor frecuencia, para evitar las molestias producidas por las hernias de hiato. 
+                        Se comercializan solos o asociados con antiflatulentos, carminativos y espasmolíticos. <br>
+                        Los antiácidos se utilizaron durante muchos años en el tratamiento de la úlcera péptica, pero, desde hace unos años,
+                         han sido mayoritariamente sustituidos por otros dos tipos de fármacos (antagonistas anti-H2 e inhibidores de la bomba de protones, por orden cronológico de aparición).
+                          Estos medicamentos actúan inhibiendo la secreción ácida del estómago. Son altamente eficaces y presentan pocos efectos secundarios.
+                    </i>
+                </p>
+                <br>
+                <b>Tomar antiácidos</b>
+                <p>
+                    <i>
+                        Usted puede comprar muchos antiácidos sin necesidad de una receta médica. Las formas líquidas funcionan más rápidamente, 
+                        pero a usted le pueden gustar las tabletas debido a que son fáciles de usar.
+                        odos los antiácidos funcionan por igual, pero pueden causar efectos secundarios diferentes. Si toma antiácidos con frecuencia y 
+                        tiene problemas con los efectos secundarios, hable con su proveedor de atención médica.
+                    </i>
+                </p>
+                <br>
+                <b>Cuándo usar los antiácidos</b>
+                <p>
+                    <i>
+                        Los antiácidos son un buen tratamiento para la acidez gástrica que sucede de vez en cuando.
+                        Tome los antiácidos aproximadamente 1 hora después de comer o cuando tenga acidez gástrica. Si está tomándolos porque los síntomas se presentan en la noche, no los ingiera con alimento.
+                        Los antiácidos no pueden tratar problemas más serios, como apendicitis, úlcera estomacal, cálculos biliares o problemas intestinales. Hable con su proveedor si usted tiene:
+                        <ul>
+                            <li>Dolor o síntomas que no mejoran con los antiácidos</li>
+                            <li>Síntomas todos los días o por la noche</li>
+                            <li>Náuseas y vómitos</li>
+                            <li>Sangrado en las deposiciones o deposiciones oscuras</li>
+                            <li>Distensión o cólicos</li>
+                            <li>Dolor en la parte baja del abdomen, en un costado o en la espalda</li>
+                            <li>Diarrea grave o que no desaparece</li>
+                            <li>Fiebre con dolor abdominal</li>
+                            <li>Dolor torácico o dificultad para respirar</li>
+                            <li>Problemas para tragar</li>
+                            <li>Pérdida de peso que no puede explicar</li>
+                        </ul>
+                        Llame a su proveedor si necesita usar antiácidos la mayoría de los días.
+                    </i>
+                </p>
+                <br>
+                <b>Efectos secundarios de los antiácidos</b>
+                <p>
+                    <i>
+                        Usted puede tener efectos secundarios por tomar estos medicamentos. Los antiácidos están hechos con 3 ingredientes básicos. Si usted tiene problemas, pruebe con otra marca.
+                        <ul>
+                            <li>Las marcas con magnesio pueden causar diarrea.</li>
+                            <li>Las marcas con calcio o aluminio pueden causar estreñimiento.</li>
+                            <li>En muy raras ocasiones, las marcas con calcio pueden causar cálculos renales u otros problemas.</li>
+                            <li>Si usted toma cantidades grandes de antiácidos que contengan aluminio, puede estar en riesgo de pérdida de calcio, lo cual puede llevar a la presencia de huesos débiles (osteoporosis).</li>
+                        </ul>
+                        Los antiácidos pueden cambiar la manera como el cuerpo absorbe los otros medicamentos que usted está tomando. Lo mejor es tomar cualquier otro medicamento ya sea 1 hora antes o 4 horas después de tomar los antiácidos. <br>
+                        <br>
+                        <b>Hable con su proveedor o el farmaceuta antes de tomar los antiácidos regularmente si:</b>
+                        <ul>
+                            <li>Tiene enfermedad renal, presión arterial alta o enfermedad del corazón.</li>
+                            <li>Está en una dieta baja en sodio.</li>
+                            <li>Ya está tomando calcio.</li>
+                            <li>Está tomando otros medicamentos todos los días.</li>
+                            <li>Ha tenido cálculos renales.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Antagonistas H2</b>
+                <p>
+                    <i>
+                        Los antihistamínicos antagonistas H2 actúan produciendo la inhibición de la secreción ácida por bloqueo selectivo de los receptores H2 de la histamina que se ven implicados en ella. En la segunda mitad de los años setenta, 
+                        su llegada supuso un gran avance en el tratamiento de úlceras y gastritis. Los más conocidos y aún utilizados son la ranitidina, la famotidina y la cimetidina. En menor medida, la nizatidina y la roxatidina.
+                    </i>
+                </p>
+                <br>
+                <b>Inhibidores de la bomba de protones</b>
+                <p>
+                    <i>
+                        A finales de la década de los ochenta del siglo pasado se introducen en el mercado los inhibidores de la bomba de protones (o más precisamente de potasio/hidrogeniones),
+                        que actúan a otro nivel, bloqueando directamente la bomba iónica que libera los iones H+ desde las células parietales hacia la luz gástrica. Son muy eficaces y bien tolerados. 
+                        Su efecto terapéutico es más duradero que el de los medicamentos anteriormente descritos, lo que permite su administración en una única toma al día. <br>
+                        <br>
+                        Dentro de este grupo contamos con el omeprazol (que supuso una verdadera revolución terapéutica tras su lanzamiento), el lansoprazol, el esomeprazol y el pantoprazol, entre otros. <br>
+                        <br>
+                        No hemos de olvidar que actualmente, para el tratamiento de la úlcera péptica, además del uso de estos fármacos, se suele instaurar un tratamiento antibiótico (en general,
+                        un macrólido asociado a amoxicilina) para erradicar el Helicobacter pylori de la mucosa gastroduodenal.
+                        Se ha demostrado que una vez eliminada esta bacteria, se restablece más rápidamente la integridad de la mucosa y se reduce enormemente la tasa de recidivas.
+                    </i>
+                </p>
+                <br>
+                <b>Consejo farmacéutico</b>
+                <p>
+                    <i>
+                        Los problemas digestivos son un motivo de consulta frecuente en la oficina de farmacia. Los pacientes se acercan a nosotros con diferentes problemas como pueden ser vómitos, 
+                        diarreas, estreñimiento, y como en el caso que nos ocupa, acidez o «dolor de estómago». Como siempre, intentaremos esclarecer si se trata de un problema puntual y de carácter leve, 
+                        o bien algo más importante que precise de intervención médica. <br>
+                        <br>
+                        Una vez descartado lo segundo, en nuestras manos está proporcionar al paciente el producto más adecuado para solucionar su problema, seleccionándolo del amplio arsenal terapéutico del que disponemos, 
+                        con medicamentos efectivos y de seguridad contrastada. Es importante recordarle al paciente que la acidez no es una enfermedad en sí misma, sino solamente un síntoma, 
+                        y que puede ser consecuencia de enfermedades como el reflujo gastroesofágico o la úlcera de estómago,
+                         aunque lo más habitual es que se trate de una situación producida por un abuso alimentario, un aumento del nivel de estrés o una serie de malos hábitos. 
+                         Por tanto, resulta de gran importancia que hagamos llegar a nuestro cliente ciertas pautas de alimentación y vida que quizás desconozca y que podrían ayudarle a prevenir o aliviar su problema.
+                          Una de ellas consiste en recomendarle eliminar ciertos alimentos de su dieta, como pueden ser en algunos casos los cítricos, ciertas especias, el ajo y la cebolla,
+                           así como el café y el chocolate. También debe abstenerse de fumar y de beber cantidades excesivas de alcohol, además de evitar acostarse o practicar deporte inmediatamente después de comer.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

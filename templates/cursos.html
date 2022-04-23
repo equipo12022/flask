@@ -1,0 +1,142 @@
+<!--Aqui colocar la informacion de cada pagina-->
+{% extends 'estructura.html'%}
+{% block contenedor %}
+<!-- INICIO DE SECCTION -->
+<br>
+<section class="container">
+    <div class="text-center">
+        <h1 class="text-muted"><b><i>MIS CURSOS</i></b></h1>
+        <br>
+    </div>
+    <!-- CERO TARJETAS -->
+    <div class="card-group row">
+        <div class="row row-cols-2 row-cols-md-3  row-cols-lg-6">
+
+            <!-- PRIMEAR TARJETA DE CURSOS-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/anatomía01.jpg" class="card-img-top imgRedonda" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em>Anatomia</em></i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursoanatomia')}}" class="btn btn-outline-secondary border border-2   border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3  border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/fisiología.png" class="card-img-top" class="card-img-top" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em>Fisiologia</em></i></b></h5>
+                        <br>
+
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursofisiologia')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3  border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/cursoembriologia1.jpg" class="card-img-top" class="card-img-top"
+                            alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em> Embriologia</em></i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursoembriologia')}}" class="btn btn-outline-secondary border border-2  border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3  border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/cursourgencia1.webp" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em>Urgencias</em></i></b></h5>
+                        <br>
+
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursourgencias')}}" class="btn btn-outline-secondary border border-2  border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRIMEAR TARJETA DE CURSOS-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3  border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/cursogeriatria1.png" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em>Geriatria</em></i></b></h5>
+                        <br>
+
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursosgeriatria')}}" class="btn btn-outline-secondary border border-2  border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3  border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/cursoneonatologia1.png" class="card-img-top" class="card-img-top"
+                            alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i><em>Neonatologia</em></i></b></h5>
+                        <br>
+
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('cursoneonatologia')}}" class="btn btn-outline-secondary border border-2  border_tem"><b><i>Ir al Curso</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<br>
+<br>
+<br>
+<br>
+
+
+{% endblock %}

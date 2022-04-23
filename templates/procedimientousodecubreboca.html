@@ -1,0 +1,47 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Uso de Cubrebocas</b></i></h1>
+                    <br>
+                    <b><i>Uso correcto del cubrebocas</i></b>
+                </p>
+                <p>
+                    <i>
+                        <ol>
+                            <li>Lávate las manos con agua y jabón antes de manipular el cubrebocas.</li>
+                            <li>Revisa que se encuentre en un estado óptimo para ser utilizado.</li>
+                            <li>Asegúrate que el cubrebocas se encuentre del lado correcto, es decir, que la parte que va hacia la cara sea la adecuada.</li>
+                            <li>Sujétalo alrededor de las orejas.</li>
+                            <li>Cubre completamente tu rostro desde el puente de la nariz hasta debajo del mentón. No dejes ningún espacio o hueco.</li>
+                            <li>No toques el cubrebocas mientras lo usas. Si lo haces, lávate las manos, usa gel o solución de alcohol.</li>
+                            <li>Reemplaza el cubrebocas en caso de que se humedezca.</li>
+                            <li>Para quitártelo, hazlo de atrás hacia delante, desatándolo con las manos limpias.</li>
+                            <li>Luego de usarlo, lávalo inmediatamente a mano o en lavadora si es de tela; o si es desechable, deposítalo en una bolsa de plástico, ciérrala y tírala en la basura.</li>
+                        </ol>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

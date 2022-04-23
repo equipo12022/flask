@@ -1,0 +1,97 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antiarritmias</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        Los antiarrítmicos se utilizan para tratar las alteraciones del ritmo cardíaco denominadas arritmias y para aliviar los síntomas relacionados con ellas.
+                    </i>
+                </p>
+                <br><b>¿Por qué debo tomar un antiarrítmico?</b>
+                <p>
+                    <i>
+                        Los antiarrítmicos se utilizan para tratar las alteraciones del ritmo cardíaco denominadas arritmias y para aliviar los síntomas relacionados con ellas. 
+                        Los síntomas más comunes de arritmia son las palpitaciones cardíacas, los latidos irregulares, los latidos rápidos, la desorientación, los mareos, el dolor en el pecho y la falta de aliento.
+                    </i>
+                </p>
+                <br>
+                <b>¿Cómo actúan los antiarrítmicos?</b>
+                <p>
+                    <i>
+                        Los latidos irregulares pueden deberse a un defecto congénito (de nacimiento) o pueden producirse si parte del tejido muscular cardíaco (miocardio) se irrita o daña, 
+                        dando lugar a una perturbación o «cortocircuito» del sistema eléctrico del corazón.
+                        Los antiarrítmicos actúan de diferentes maneras para retardar los impulsos eléctricos del corazón a fin de normalizar su ritmo.
+                        <br>
+                        <br>
+                        Los antiarrítmicos se dividen en cuatro categorías:
+                        <ul>
+                            <li>Clase I. Los antiarrítmicos clase I son bloqueantes sódicos (o bloqueantes de los canales de sodio) que retardan la conducción eléctrica del corazón.</li>
+                            <li>Clase II. Los antiarrítmicos clase II son betabloqueantes que bloquean los impulsos que pueden producir un ritmo cardíaco irregular y obstaculizan las influencias hormonales (p. ej. de la adrenalina) en las células del corazón. Al hacerlo, también reducen la presión arterial y la frecuencia cardíaca.</li>
+                            <li>Clase III. Los antiarrítmicos clase III retardan los impulsos eléctricos del corazón bloqueando los canales de potasio del corazón.</li>
+                            <li>Clase IV. Los antiarrítmicos clase IV actúan como los antiarrítmicos clase II pero bloquean los canales de calcio del corazón.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>La digoxina </b> es otro ejemplo de un medicamento que puede utilizarse como antiarrítmico, aunque no esté incluido en las categorías precedentes.
+                        Como cada tipo de antiarrítmico actúa de manera levemente diferente, no hay un único medicamento para tratar cada tipo diferente de arritmia. A veces un antiarrítmico puede causar más arritmias o agravarlas (lo que se denomina «proarritmia»). Encontrar el medicamento más eficaz para un paciente determinado requiere una colaboración estrecha entre médico y paciente, y probar diferentes tipos de antiarrítmicos. Algunos pacientes podrían necesitar más supervisión que otros o estudios adicionales, 
+                        ya sea un estudio Holter o estudios electrofisiológicos (EEF), que además pueden ayudar a los médicos a determinar con mayor precisión qué tipo de antiarrítmico sería más eficaz.
+                    </i>
+                </p>
+                <br>
+                <b>¿Cuánto debo tomar?</b>
+                <p>
+                    <i>
+                        Los antiarrítmicos pueden intensificar o reducir los efectos de otros medicamentos. Estos efectos se denominan interacciones. Asegúrese de informarles al médico y al farmacéutico qué medicamentos está tomando (incluso los medicamentos de venta libre y los suplementos vitamínicos y herbales), para que puedan informarle de las interacciones posibles.
+                        Como hay tantos tipos diferentes de medicamentos, no indicamos aquí todas las interacciones posibles. Infórmeles al médico y al farmacéutico de todos los diferentes tipos de medicamentos que esté tomando. Cada medicamento tiene interacciones diferentes, pero a continuación damos algunos ejemplos de las categorías de medicamentos que interactúan con los antiarrítmicos.
+                        <ul>
+                            <li>Puede reducir la cantidad de warfarina que usted tiene que tomar.</li>
+                             <li>Puede reducir la cantidad de digoxina que usted tiene que tomar.</li> 
+                             <li>Puede afectar la forma en que el organismo reacciona ante la insulina o ante los medicamentos que se toman por vía oral para la diabetes</li>  
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Al tomar ciertos tipos de antiarrítmicos, la piel pude ser más sensible a los rayos del sol y quemarse más fácilmente. 
+                        La piel puede seguir siendo sensible a la luz del sol varios meses después de interrumpir el tratamiento con este medicamento.
+                         Incluso los rayos del sol que pasan a través de una ventana o de la ropa de algodón podrían quemarle la piel. Si va a estar afuera, expuesto a los rayos del sol, 
+                         use un protector solar. Si sufre una quemadura grave de sol, consulte al médico. <br>
+                         <br>
+                        <b>OBSERVACIÓN: </b> Ciertos antiarrítmicos pueden causar una coloración azul grisácea de la piel, especialmente en las zonas que se exponen al sol. 
+                        La coloración desaparecerá cuando deje de tomar este medicamento específico, pero esto puede tardar unos meses.
+                    </i>
+                </p>
+                <br>
+                <b>¿Cuáles son los efectos secundarios?</b>
+                <p>
+                    <i>
+                        A veces un medicamento puede ocasionar efectos no deseados. Éstos se denominan efectos secundarios. Cada antiarrítmico tiene efectos secundarios diferentes. 
+                        Asegúrese de leer cuidadosamente la información que reciba del médico o farmacéutico sobre el medicamento. Hable con el farmacéutico si no recibe información sobre los efectos secundarios del medicamento.
+                        Infórmele al médico inmediatamente si cree experimentar un efecto secundario del medicamento. No deje de tomar el medicamento a menos que el médico se lo indique. Si deja de tomar el medicamento sin antes consultar al médico, su estado de salud podría empeorar.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

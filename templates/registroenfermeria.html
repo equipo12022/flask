@@ -1,0 +1,85 @@
+{% extends 'estructura.html'%}<!-- HEREDA DE UNA BASE-->
+{% block contenedor%} <!-- EL CONTENEDOR -->
+
+<section class="container">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-2">
+                <h1 class="mt-4"><b class="text-muted"><i>Lista de personal Enfermeria</i></b></h1>
+                <br>
+                <ol class="breadcrumb mb-4">
+                    <a href="{{url_for('formularioenfermeria')}}"> <button type="button" class="btn btn-outline-secondary border-2 border_tem"><b><i>Registrar</i></b></button></a>
+                </ol>
+                <div class="card mb-4 border border-3 border_card">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Tabla de Registros
+                    </div>
+                    <div class="card-body">
+                        <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                        <table id="datatablesSimple">
+                            <thead>
+                                <tr class="table-danger">
+                                    <th ><b><i>Nombre</i></b></th>
+                                    <th><b><i>Apellido Paterno</i></b></th>
+                                    <th><b><i>Apellido Materno</i></b></th>
+                                    <th><b><i>Especialidad</i></b></th>
+                                    <th><b><i>Area</i></b></th>
+                                    <th><b><i>Cedula Profesional</i></b></th>
+                                    <th><b><i>Ingreso de Trabajo</i></b></th>
+                                    <th><b><i>Opciones</i></b></th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th><b><i>Nombre</i></b></th>
+                                    <th><b><i>Apellido Paterno</i></b></th>
+                                    <th><b><i>Apellido Materno</i></b></th>
+                                    <th><b><i> Especialidad</i></b></th>
+                                    <th><b><i>Area</i></b></th>
+                                    <th><b><i>Cedula Profesional</i></b></th>
+                                    <th><b><i>Ingreso de Trabajo</i></b></th>
+                                    <th><b><i>Opciones</i></b></th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <!-- EXTRAER DATOS DE FIREBASEE-->
+                                {% set contador_enfermeria=namespace( value=0) %}
+                                {% for registros_enfermeria in elementos_registros_enfermeria %}
+                                    <tr>
+                                        <td>{{registros_enfermeria.nombre}}</td>
+                                        <td>{{registros_enfermeria.apellidopaterno}}</td>
+                                        <td>{{registros_enfermeria.apellidomaterno}}</td>
+                                        <td>{{registros_enfermeria.especialidad}}</td>
+                                        <td>{{registros_enfermeria.area}}</td>
+                                        <td>{{registros_enfermeria.cedulaprofesional}}</td>
+                                        <td>{{registros_enfermeria.ingresodetrabajo}}</td>
+                                        <td>
+                                            <a class="dltBtny btn btn-outline-danger border_tem" data-id="{{ lista_indice_final_enfermeria[contador_enfermeria.value] }}" href="javascript:void(0)"><b><i>Eliminar</i></b></a>
+                                                <a class="actualizarh btn btn-outline-success border_tem" data-id="{{ lista_indice_final_enfermeria[contador_enfermeria.value] }}" href="javascript:void(0)"><b><i>Actualizar</i></b></a>
+                                        </td>
+                                    </tr>
+                                    {% set contador_enfermeria.value=contador_enfermeria.value + 1  %}
+                                {% endfor%} 
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
+
+{% endblock %}
+
+<!-- VENTANA EMERGENTE  PARA ELIMINAR VENTANA-->
+{% block eliminar_ventana %}
+<!-- ----------------Estas librerias son necesarias para la ventana modal------------------------------------------>
+<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+<script src="/static/js/eliminar.js"></script>
+{% endblock %}

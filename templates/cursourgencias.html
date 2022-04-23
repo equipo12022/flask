@@ -1,0 +1,109 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('cursos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/cursourgencia.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark"><b><i></i></b></h5>
+                            <p class="bg-dark"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                <h1 class="text-center"><i class="text-muted"><b>Urgencias Medicas</b></i></h1>
+                <i>
+                    <h6 class=""><b><i>Consepto:</i></b></h6>  alteración de la integridad fidica y/o mental de una persona, causada por una enfermedad poniendo en riesgo la vida del paciente, generando
+                    una demanda de atencion médica de inmediata, esto tiende a disminuir los riesgos.
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Cuando se presenta una urgencia es necesaria una atención inicial con el objetivo de estabilizar signos vitales y 
+                        clasificar el estado de salud del paciente. Precisamente para esto se determina una prioridad en el servicio por medio del Triage. 
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        El triage es “el sistema de selección y clasificación de pacientes en los servicios de urgencias, basado en sus necesidades terapéuticas y los recursos disponibles. 
+                        Consiste en una valoración clínica breve que determina la prioridad en que un paciente será atendido, y se clasifica en niveles de 1 a 5.
+                    </i>
+                </p>
+                <br>
+                <h6>Niveles de triage</h6>
+                <p>
+                    <i>
+                        La atención en urgencias no se hace de acuerdo a un orden de llegada, 
+                        sino de acuerdo con el riesgo que presenta la salud del paciente, 
+                        según los niveles de clasificación del triage. Primero se atiende a quienes podrían llegar a perder la vida, 
+                        un órgano o una parte de su cuerpo; luego siguen las urgencias de menor complejidad, que no comprometen la vida.
+                    </i>
+                </p>
+                <br>
+                <h6>Triage 1: PACIENTE GRAVE</h6>
+                <p>
+                    <i>
+                        requiere atención inmediata del paciente, ya que su condición representa un riesgo vital. 
+                        Casos como paro cardiorrespiratorio, hemorragias severas, pérdida de un miembro u órgano, entre otros.
+                    </i>
+                </p>
+                <br>
+                <h6>Triage 2:PACIENTE GRAVE</h6>
+                <p>
+                    <i>
+                        la condición clínica del paciente puede evolucionar hacia un rápido deterioro, por eso, 
+                        requiere una atención que no debe superar los treinta (30) minutos. 
+                        Por ejemplo, casos como un dolor extremo, heridas no vitales, diarrea aguda con dolor abdominal o fiebre, vómito sin tolerancia a vía oral, entre otros 
+                    </i>
+                </p>
+                <br>
+                <h6>Triage 3: COMPLEJIDAD MEDIA</h6>
+                <p>
+                    <i>
+                        la condición clínica del paciente requiere de medidas diagnósticas y terapéuticas en urgencias. 
+                        Es decir, necesita un examen o un tratamiento rápido, pero se debe actuar pronto. Casos como dolor por un par de días, 
+                        cuerpo extraño en el oído sin dolor o sangrado, dolor lumbar que se irradia hacia las piernas o lumbalgia súbita, entre otros.
+                </i>
+                </p>
+                <br>
+                <h6>Triage 4: CONDICION NO URGENTE</h6>
+                <p>
+                    <i>
+                        el paciente presenta condiciones médicas que no comprometen su estado general, 
+                        ni representan un riesgo evidente para su vida. Casos como dolor no agudo en el estómago, sinusitis, entre otros. 
+                        En este caso se recomienda atención por consulta prioritaria. 
+                    </i>
+                </p>
+                <br>
+                <h6>Triage 5: CONSULTA GENERAL</h6>
+                <p>
+                    <i>
+                        el paciente presenta una condición clínica relacionada con problemas agudos o crónicos 
+                        sin evidencia de deterioro que comprometa su estado general. Casos como dolor de garganta, dolor lumbar de varios días de evolución, cólico abdominal 
+                        sin vómito o diarrea, entre otros. Se recomienda asistir a consulta prioritaria o programar consulta externa. 
+                    </i>
+                </p>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

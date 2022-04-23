@@ -1,0 +1,147 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4"><b class="text-muted"><i>Tabla de registros normales en Frecuencia Cardiaca</i></b></h1>
+                    <br>
+                    <div class="card mb-4 border border-3 border_card">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            Rangos Normales
+                        </div>
+                        <div class="card-body">
+                            <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr class="table-info">
+                                        <th><b><i>Edad</i></b></th>
+                                        <th><b><i>Rangos (Media)</i></b></th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th><b><i>Edad</i></b></th>
+                                        <th><b><i>Rangos (Media)</i></b></th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                        <tr>
+                                            <th><b><i>Recien Nacido</i></b></th>
+                                            <th><b><i>95-150 (123)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>1-2 Meses</i></b></th>
+                                            <th><b><i>121-179 (149)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>Lactante Mayor</i></b></th>
+                                            <th><b><i>20-30</i></b></td>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>3-5 Meses</i></b></th>
+                                            <th><b><i>106-186</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>6-11 Meses</i></b></th>
+                                            <th><b><i>109-169 (134)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>1-2 Años</i></b></th>
+                                            <th><b><i>89-151 (119)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>3-4 Años</i></b></th>
+                                            <th><b><i>73-137 (108)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>5-7 Años</i></b></th>
+                                            <th><b><i>65-133 (100)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>8-11 Años</i></b></th>
+                                            <th><b><i>62-130 (91)</i></b></th>
+                                        </tr>
+                                        <tr>
+                                            <th><b><i>12-15 Años</i></b></th>
+                                            <th><b><i>60-119 (85)</i></b></th>
+                                        </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <i>
+                        <h6 class=""><b><i>Consepto:</i></b></h6>
+                        La frecuencia cardíaca indica la cantidad de veces que el corazón late por minuto y su valor normal en adultos varía entre 60 a 100 latidos por minuto en reposo. Sin embargo,
+                         puede variar de acuerdo a algunos factores como la edad, nivel de actividad física realizada o la presencia de alguna enfermedad cardíaca. 
+                        La frecuencia cardíaca ideal en reposo de acuerdo a la edad es:
+
+                        Hasta 2 años de edad: 120 a 140 lpm,
+                        Entre 8 años hasta 17 años: 80 a 100 lpm,
+                        El adulto sedentario: 70 a 80 lpm,
+                        Adulto que practica actividad física y adultos mayores (> 65 años de edad): 50 a 60 lpm.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>Cómo medir la frecuencia cardíaca</b> <br>
+                        Para medir la frecuencia cardíaca puede colocar el dedo índice y el medio en la parte lateral del cuello donde se puede sentir los latidos cardíacos y contar cuántas pulsaciones se sienten durante 1 minuto.
+                        El cálculo también puede realizarse contando los latidos hasta 15 segundos y multiplicar el resultado por 4. Otra forma más fidedigna es utilizar un pequeño aparato llamado medidor de frecuencia cardíaca que se coloca en el dedo, o utilizar relojes especiales que miden la FC. 
+                        8Ademas de esto, otra forma de medir la frecuencia cardíaca es con un pulsómetro, es un dispositivo en forma de pulsera que se coloca en la muñeca, siendo utilizado principalmente por deportistas. Estos productos pueden comprarse en las tiendas de productos médicos o de deporte.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>Por encima de 100 lat/min:</b>
+                        <br>
+                        No en todos los casos el aumento de los latidos cardíacos es causado por alguna situación preocupante. El corazón puede latir más fuerte o acelerado en situaciones diarias como: 
+                        <ul>
+                            <li>Emociones fuertes;</li>
+                            <li>Ataques de pánico o de ansiedad;</li>
+                            <li>Relación sexual;</li>
+                            <li> Fiebre;</li>
+                            <li> Práctica de ejercicios;</li>
+                            <li> Realización de algún esfuerzo;</li>
+                            <li>  Uso de medicamentos;</li>
+                            <li> Presión arterial alta. Vea qué hacer cuando la presión está alta;</li>
+                            <li> Ingestión de grandes cantidades de alcohol o cafeína;</li>
+                            <li> Padecimiento de alguna enfermedad cardíaca como insuficiencia cardíaca o enfermedad valvular cardíaca, así como de otras enfermedades como aterosclerosis o hipertensión. </li>
+                        </ul>
+                    </i>
+                </p>
+
+                <br>
+                <p>
+                    <i>
+                       <b> Por debajo de 60 lat/min:</b> <br>
+                        Los latidos cardíacos inferiores a 60 latidos por minuto pueden ocurrir debido a la vejez o ser apenas un efecto secundario de ciertos medicamentos para el corazón. Sin embargo, 
+                        la FC baja también puede indicar problemas cardíacos como bloqueo cardíaco o disfunción del nódulo sinusal principalmente si va acompañada de mareos, 
+                        cansancio o falta de aire. Por lo tanto, si la persona tiene el ritmo cardiaco débil debe consultar a un cardiólogo para hacer exámenes al corazón, identificar la causa e iniciar el tratamiento, si es necesario.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

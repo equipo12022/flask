@@ -1,0 +1,71 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Aplicacion de Frio</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        El uso del frío se conoce por Crioterapia, que puede ser utilizada mediante hielo, compresas frías, compresas con alcohol y con chorro de aire frío (Crioaeroterapia), el efecto que se quiere conseguir es la Hipotermia.
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        <b>  a) Hielo:</b>
+                        <br>
+                        Mediante bolsas de hielo (temperatura 0o), durante una hora, aplicables a una zona determinada.
+                        Se utiliza para cefaleas, detener una hemorragia, disminuir la hinchazón o la temperatura corporal y aliviar el dolor.
+                        Se aplica mediante una bolsa en la que se han introducido trozos de hielo sin llenarla, y sacando el aire para que se adapte mejor, comprobándola con frecuencia, para observar si se ha derretido. Colocar un plástico alrededor y vigilar que no se produzca un frío extremo.
+                        Es aconsejable llenar la bolsa de agua con alguna sustancia que disminuya la temperatura de congelación, como alcohol, jabón, “coca cola”…, pues no se formarán trozos de hielo sino escarcha, ello facilita la aplicación sobre una zona determinada, mejor que los cubitos.
+                        Después de la aplicación proceder como en el caso de la bolsa de agua caliente, no olvidando anotar la zona donde se aplicó, el tiempo y la reacción.
+                        <br>
+                       <b> b) Compresas frías:</b> 
+                       <br>
+                        Se procederá como en el caso ya descrito de las compresas calientes que se enfriarán sobre hielo picado, exprimiéndolas a continuación. Si es necesario, recordar realizarlo en condiciones de esterilización.
+                        Para la reducción de la fiebre en los niños, se utilizarán compresas tibias o se les introducirá en la bañera con agua también tibia durante media hora.
+                        Recuerde que al retirarlo del agua hay que secarlo totalmente, friccionando el cuerpo y cambiando la ropa tanto de la cama, como la que él lleve encima, echando el resto de material al cesto de la ropa sucia.
+                        <br>
+                        <b>   c) Compresas con alcohol</b>
+                         <br>
+                        Se utilizan sobre todo en casa, ya que en los hospitales se utilizan colchones térmicos, para la reducción de temperaturas elevadas.
+                        Para utilizarlas, se mezclará el alcohol con agua fría o tibia, y se friccionará al paciente usando el paño de lavarse, como si se realizará un baño en la cama. La sábana usada se dejará en el cesto de la ropa sucia, y se controlará la temperatura, pulso y respiración del paciente. 30 minutos después del tratamiento.
+                        Anote todos los datos recogidos.
+                    </i>
+                </p>
+
+                <br>
+                <b><i>Precauciones.</i></b>
+                <p>
+                    <i>
+                        Tanto el calor como el frío son agentes lesivos para la piel del individuo, por tanto y como normas generales debemos tener las siguientes precauciones:
+                        <ul>
+                            <li>No poner en contacto directo con piel, para ello proteger con algún elemento que impida el contacto directo y que permita al tiempo el efecto beneficioso perseguido (gasas, telas…)</li>
+                            <li>Prevenir la transmisión de infecciones de unos pacientes a otros.
+                                En pacientes con poca sensibilidad parcial o general, valorar las zonas de aplicación, en prevención de posibles lesiones.
+                            </li>
+                            <li>En las aplicaciones de calor por radiaciones, en el uso de las lámparas se dejará al descubierto únicamente la zona afectada. Entre el cuerpo y la lámpara debe haber un mínimo de 60 cm. de distancia. 
+                                El tiempo de exposición será prescrito por el médico, aprox. 10-20 min. Se debe indicar al paciente que no debe mirar la lámpara, provoca opcificación del cristalino (cataratas).
+                            </li>
+                            <li>Las radiaciones por ultrasonidos están contraindicadas en paciente con implantes quirúrgicos en huesos o articulaciones, que lleven marcapasos, o con infecciones.</li>
+                        </ul>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

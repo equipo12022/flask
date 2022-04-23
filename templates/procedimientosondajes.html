@@ -1,0 +1,97 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento de Sondajes Vesical</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        Retención urinaria aguda o crónica; necesidad de evaluación precisa de la diuresis, p. ej. horaria (en pacientes en estado grave, p. ej. inestables hemodinámicamente, o en pacientes que no colaboran); 
+                        hematuria con trombos en la vejiga; toma de muestras de orina para el análisis, si no es posible obtenerla utilizando otros métodos; lesiones por presión u otras heridas serias, 
+                        cuya higiene adecuada no puede asegurarse por causa de incontinencia urinaria, cuando otros métodos de eliminación de la orina resultan ineficaces; después de traumatismos, 
+                        si otros métodos de eliminación de la orina se asocian a un empeoramiento del dolor;
+                        incontinencia urinaria, si no se puede proporcionar asistencia adecuada y asegurar una correcta higiene del paciente utilizando otros métodos de eliminación de la orina.
+                    </i>
+                </p>
+                <br>
+                <b><i>Contraindicaciones:</i></b>
+                <p>
+                    <i>
+                        Prostatitis aguda, estenosis significativa de la uretra, ruptura de la uretra (sospechar p. ej. en traumatismos de pelvis).
+                    </i>
+                </p>
+                <br>
+                <b><i>Complicaciones:</i></b>
+                <p>
+                    <i>
+                        Lesión de la uretra, de la próstata, o del esfínter de la vejiga; infección.
+                    </i>
+                </p>
+                <br>
+                <b><i>Preparación del paciente</i></b>
+                <p>
+                    <i>
+                        Consentimiento informado del paciente. Posición: hombres en decúbito supino con los miembros inferiores rectos, 
+                        mujeres en decúbito supino con los miembros inferiores separados y flexionados en las rodillas.
+                    </i>
+                </p>
+                <br>
+                <b><i>Equipo</i></b>
+                <p>
+                    <i>
+                        Sonda de Foley tamaño (generalmente) 18 French (F; 1 F = 1 Charriere [Ch] = 1/3 mm) en hombres y 16 F en mujeres, gel con lidocaína, 
+                        solución antiséptica, gasas estériles, guantes estériles, paños estériles, jeringa de 10 ml, agua para inyección, colector para recoger la orina.
+                    </i>
+                </p>
+                <br>
+                <b><i>Técnica</i></b>
+                <p>
+                    <i>
+                        <ol>
+                            <li><b>Sondaje en hombres.</b>  Tomar el pene con la mano, deslizar el prepucio y desinfectar.
+                                 Con ayuda de la tapa cónica introducir gel en la uretra, cubrir con gel el extremo de la sonda.
+                                  Verificar la estanqueidad del balón llenándolo con el agua para inyección, a continuación vaciar el balón. 
+                                  Colocar el pene perpendicularmente al tronco, tirando suavemente hacia arriba. Deslizar la sonda con movimientos fluidos por la uretra hasta que aparezca flujo de orina.
+                                   Luego llenar el balón y deslizar el prepucio. Conectar la sonda con el colector y asegurarse de que la orina sigue fluyendo.
+                                </li>
+                                <li><b>Sondaje en mujeres.</b>  Separar los labios menores, limpiar la salida de la uretra con una gasa empapada de la solución antiséptica. Por medio de la tapa cónica introducir el gel a la uretra,
+                                    cubrir con gel el extremo de la sonda. Verificar la estanqueidad del balón llenándolo con el agua para inyección, luego vaciar el balón. Deslizar la sonda a una profundidad de 10-12 cm o hasta que aparezca la orina,
+                                    luego llenar el balón. Conectar la sonda con el colector y asegurarse de que la orina sigue fluyendo. La resistencia que impide la colocación de la sonda, sobre todo en los hombres, 
+                                    puede vencerse al usar una sonda de mayor diámetro (20 F). En caso de fracaso, se puede probar la introducción de la sonda de Tiemann, que es más rígida, 
+                                    tiene el extremo curvado y no tiene balón. Esta sonda debe ser introducida con mucha precaución, con la parte curvada dirigida hacia arriba. Si no se logra introducir la sonda en la uretra, llamar al urólogo.
+                                </li>
+                        </ol>
+                    </i>
+                </p>
+                <br>
+                <b><i>Después del procedimiento</i></b>
+                <p>
+                    <i>
+                        Mantener la sonda en la vejiga por el período de tiempo más corto posible. Desconectar el drenaje solo para enjuagar la sonda. 
+                        Tomar pequeñas muestras de orina punzando con una aguja estéril el —previamente desinfectado— extremo distal de la sonda. 
+                        <br>
+                        Tomar las muestras de mayor volumen del colector, después de desinfectar el lugar de unión del sistema de sonda-drenaje-colector.
+                         No reemplazar la sonda en intervalos de tiempo fijados arbitrariamente. Reemplazar la sonda obstruida (si el lavado es ineficaz) 
+                         o si se presentan síntomas de infección del sistema urinario y persiste la necesidad de mantener la sonda.
+                    </i>
+                </p>
+  
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

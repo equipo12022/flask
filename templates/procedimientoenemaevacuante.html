@@ -1,0 +1,101 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Enema Evacuante</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b><br>
+                        <p>
+                            <i>
+                                Es la introducción de sustancias en el colon a través del recto con la finalidad de eliminar la materia fecal.
+                            </i>
+                        </p>
+                        <br>
+                        <p>
+                            <b><i>Objetivo:</i></b>
+                            <i>
+                                Lograr, por medio de las sustancias que se introducen, y promover la defecación, pasar medio de contraste y como tratamiento o limpieza de la porción terminal del colon.
+                            </i>
+                        </p>
+                        <br>
+                        <b><i>Material y equipo:</i></b>
+                        <p>
+                            <i>
+                                <ul>
+                                    <li>Sistema irrigador y/o bolsa para enema desechable.</li>
+                                    <li>La bolsa desechable es más apropiada por ser práctica en su uso.
+                                        Sonda rectal prelubricada.</li>
+                                    <li>Solución para administrar.</li>
+                                    <li>Guantes desechables.</li>
+                                    <li>Lubricante hidrosoluble.</li>
+                                    <li>Soporte para la solución (pentapié).</li>
+                                    <li>Cómodo (papel higiénico).</li>
+                                    <li>Pinzas de clamp en caso necesario.</li>
+                                    <li>Bolsa para desechos.</li>
+                                </ul>
+                            </i>
+                        </p>
+                        <br>
+                        <b><i>Procedimiento</i></b>
+                        <p>
+                            <i>
+                                <ul>
+                                    <li>Verificar la indicación médica en el expediente clínico.</li>
+                                    <li>Verificar la identificación del paciente. Llamarle por su nombre.</li>
+                                    <li>Trasladar el equipo y materiales a la unidad del paciente.</li>
+                                    <li>Lavarse las manos.</li>
+                                    <li>Explicar al paciente en qué consiste la realización del procedimiento, respetando al máximo su intimidad.</li>
+                                    <li>Preparar y tener dispuesto el material. Colocar el equipo irrigador y/o la bolsa con la solución a administrar, previamente tibia a temperatura corporal en el soporte (pentapié) a una altura máxima de 50 cm sobre el nivel del paciente.</li>
+                                    <li>Conectar la sonda al extremo del tubo transportador del irrigador o bolsa. Lubricar la punta de la sonda. Extraer el aire del sistema del equipo para irrigar y de la sonda. Pinzar el sistema para evitar que la solución siga saliendo.</li>
+                                    <li>Colocar al paciente en posición de Sims. Decúbito lateral izquierdo con la extremidad inferior derecha flexionada, si no está contraindicado. Descubrir solamente la región.</li>
+                                    <li>Colocarse los guantes.</li>
+                                    <li>Separar con una mano los glúteos para visualizar el orificio anal; con la otra mano introducir suavemente el extremo distal de la sonda rectal, unos 10 cm aproximadamente.</li>
+                                    <li>Despinzar el sistema y dejar pasar lentamente la solución al paciente, de tal manera que éste lo tolere sin molestias. Terminar de administrar la cantidad de solución indicada.</li>
+                                    <li>Pinzar el sistema y retirar suavemente la sonda, desecharla conforme lo marca la NOM 087-ECOL-1995.</li>
+                                    <li>Colocar al paciente en decúbito lateral derecho. Motivar al paciente para que retenga la solución de 5 a 10 minutos.</li>
+                                    <li>Colocar el cómodo al paciente y/o ayudarlo a que evacúe en el sanitario el enema y las heces fecales.</li>
+                                    <li>Asear al paciente o proporcionarle los medios (papel sanitario) para que él, si está en condiciones, se lo realice solo.</li>
+                                    <li>Registrar en el expediente clínico el procedimiento realizado, la cantidad de solución administrada y si se cumplió el objetivo para el cual fue administrada. Asimismo incluir la fecha, hora, características de la eliminación e incidencias durante el procedimiento.</li>
+                                </ul>
+                            </i>
+                        </p>
+
+                    </i>
+                </p>
+                <br>
+                <b><i>ADVERTENCIA</i></b> <br> 
+                <p>
+                    <i>
+                        Comprobar que no existan contraindicaciones para administrar el enema. Administrar con precaución en pacientes cardiópatas
+                    </i>
+                </p>
+                <br>
+                <b><i>Consideraciones especiales</i></b>
+
+                <p>
+                    <i>
+                        <ul>
+                            <li>No forzar la introducción de la sonda, si esto sucede, puede provocar perforación intestinal.</li>
+                            <li>Suspender la administración en caso de que el paciente refiera dolor abdominal o hemorragia.</li>
+                        </ul>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

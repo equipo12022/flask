@@ -1,0 +1,78 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antiinfecciosos</b></i></h1>
+                    <br>
+                    <i>
+                        Los medicamentos antiinfecciosos son medicinas que funcionan para prevenir o tratar infecciones, incluyen medicamentos antibacterianos, antivirales, antifúngicos y antiparasitarios. 
+                    </i>
+                </p>
+                <br>
+                <b>¿Por qué son tan importantes los medicamentos antiinfecciosos? </b>
+                <p>
+                    <i>
+                        Los medicamentos antiinfecciosos han revolucionado la atención médica y ahora son fundamentales para curar e incluso ayudar a prevenir muchos tipos de infecciones. Gracias a ellos, podemos:
+                        <ul>
+                            <li>Tratar infecciones menores y, con mayor frecuencia, curar muchas enfermedades infecciosas graves, como neumonía o tuberculosis. </li>
+                            <li>Realizar procedimientos de rutina y cirugías complejas, como cesáreas o reemplazos de articulaciones, que conllevan un riesgo de infección grave. </li>
+                            <li>Dar tratamientos inmunosupresores vitales, como quimioterapia, a personas con cáncer</li>
+                        </ul>
+                        Es alarmante que muchos medicamentos antiinfecciosos estén perdiendo su eficacia debido a la resistencia a los antimicrobianos (RAM) .
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué causa la infección? </b>
+                <p>
+                    <i>
+                        Las enfermedades infecciosas siguen siendo una de las mayores preocupaciones de salud pública mundial. Pero, ¿qué causa las infecciones en primer lugar? 
+                        Las infecciones son causadas por diferentes tipos de patógenos, incluidos bacterias, virus, hongos y parásitos, y pueden adquirirse en la comunidad, en un hospital o en un entorno de atención médica. <br>
+                        <br>
+                        Las infecciones resistentes a múltiples fármacos son el resultado de que las bacterias y otros patógenos pueden cambiar y desarrollar resistencia a muchos antimicrobianos.
+                        Las causadas por bacterias gramnegativas son ampliamente reconocidas como una de las mayores amenazas para la salud mundial en la actualidad.
+                        Son más difíciles de tratar debido a su estructura celular y a su capacidad para desarrollar resistencia a los antibióticos de uso común.
+
+                        <ul>
+                            <li> <b>Las infecciones bacterianas:</b> 
+                                <br> Varían desde las relativamente leves, como las infecciones cutáneas o gastrointestinales, 
+                                hasta las graves y potencialmente mortales, como las infecciones del torrente sanguíneo o la neumonía.
+                                La mayoría de las bacterias se clasifican como grampositivas o gramnegativas.
+                            </li>
+                            <li><b>Las infecciones fúngicas o micóticas:</b>
+                                <br>
+                                Van desde el pie de atleta o la candidiasis vaginal7 hasta infecciones invasivas potencialmente mortales en pacientes inmunodeprimidos, como aquellos que padecen cáncer.
+                            </li>
+                            <li> <b>Las infecciones virales:</b>
+                                <br>
+                                Van desde resfriados comunes que se resuelven por sí solos, hasta infecciones graves de largo plazo como la hepatitis C.
+                                Las vacunas pueden prevenir algunas infecciones virales, como la gripe y muchas infecciones infantiles.
+                                </li>
+                            <li> <b>Las infecciones parasitarias:</b>
+                                <br>
+                                Pueden afectar a cualquier persona, en cualquier lugar, 
+                                pero son una carga particular para las personas que viven en los trópicos y subtrópicos.
+                                Son causadas por un organismo que vive sobre o en un huésped, e incluyen la malaria, la toxoplasmosis y los gusanos intestinales. 
+                            </li>
+                        </ul>
+                    </i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

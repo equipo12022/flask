@@ -1,0 +1,231 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Lavado de Mano</b></i></h1>
+                    <i>
+                        <h5><b><i>Consepto:</i></b></h5>
+                        El lavado de manos es la frotación vigorosa de las manos previamente enjabonadas, seguida de un aclarado con agua abundante, con el fin de eliminar la suciedad, materia orgánica, flora transitoria y residente, y así evitar la transmisión de estos microorganismos de persona a persona.
+                        El uso de soluciones alcohólicas para el lavado de manos constituye una alternativa a tener seriamente en cuenta en la higiene de las manos en la actualidad (más desarrollo en otro capítulo).
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b> Flora residente: </b> también llamada colonizante. Son microorganismos que se encuentran habitualmente en la piel. No se eliminan fácilmente por fricción mecánica.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>Flora transitoria:</b> también llamada contaminante o "no colonizante". Son microorganismos que contaminan la piel,
+                             no encontrándose habitualmente en ella. Su importancia radica en la facilidad con la que se transmiten, siendo el origen de la mayoría de las infecciones nosocomiales.
+                    </i>
+                </p>
+                <br>
+                <h5><b><i>TIPOS DE LAVADO DE MANOS</i></b></h5>
+                <br>
+                <h6><b><i><i>LAVADO DE RUTINA HIGIÉNICO</i></i></b></h6>
+                <p>
+                    <i>
+                        <b>Objetivo:</b><br>
+                        <ul>
+                            <li>  Eliminar la suciedad, materia orgánica y flora transitoria de las manos.</li>
+                        </ul>
+                        <br>
+                        <b><i>Material:</i></b>
+                        <ul>
+                            <li>Jabón líquido ordinario, en dispensador desechable, con dosificador.</li>
+                            <li>Toalla de papel desechable.</li>
+                        </ul>
+                        <br>
+                       <b> Técnica:</b>
+                        <ul>
+                            <li> Humedecer las manos con agua corriente, preferiblemente templada.</li>
+                            <li>Aplicar jabón líquido con dosificador.</li>
+                            <li>Frotar las manos palma con palma, sobre dorsos, espacios interdigitales y muñecas durante al menos 10 segundos.</li>
+                            <li>   Aclarar con abundante agua corriente.</li>
+                            <li> Secar las manos con toallas de papel.</li>
+                            <li>Cerrar el grifo con la toalla de papel utilizada para el secado (los lavabos con sistema de cierre de codo o de pedal ahorran este paso; los de célula fotoeléctrica, además, determinan un importante ahorro de agua).</li>
+                        </ul>
+                        <br>
+                        <b>Indicaciones:</b>
+                        <ul>
+                            <li> Antes y después del contacto con cada paciente.</li>
+                            <li>Entre dos procedimientos en el mismo paciente si hay sospecha de contaminación de las manos.</li>
+                            <li>Después del contacto con alguna fuente de microorganismos (sustancias y fluidos corporales, mucosas piel no intacta...) y objetos contaminados con suciedad.</li>
+                            <li>Después de quitarse los guantes.</li>
+                        </ul>
+                    </i>
+                </p>
+                <h5><b><i>LAVADO ESPECIAL O ANTISÉPTICO</i></b></h5>
+                <b><i>Objetivo:</i></b>
+                <p>
+                    <i>  
+                        <ul>
+                            <li>Eliminar la suciedad, materia orgánica y flora transitoria y parte de la flora residente de las manos, consiguiendo además cierta actividad microbiana residual.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>Material:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Jabón líquido con antiséptico (solución jabonosa de clorhexidina al 4% o povidona yodada al 7,5%), en dispensador desechable, con dosificador. Toalla de papel desechable.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>Técnica:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Igual que en el lavado higiénico. Sólo cambia el tipo de jabón.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>Indicaciones:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Antes de realizar procedimientos invasivos como inserción de catéteres, sondas vesicales.</li>
+                            <li> Antes y después del contacto con pacientes que se sabe o sospecha están infectados o colonizados por microorganismos epidemiológicamente importantes.</li>
+                            <li>  Antes del contacto con pacientes inmunocomprometidos en situaciones de fundado riesgo de transmisión.</li>
+                        </ul>
+                    </i>
+                </p>
+
+                <h5><b><i>LAVADO QUIRÚRGICO</i></b></h5>
+                <b><i>Objetivo:</i></b>
+                <br>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Eliminar la flora transitoria y al máximo la flora residente de las manos previo a un procedimiento invasivo que por su especificidad o su duración requiere un alto grado de asepsia y un efecto residual.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>Material:</i></b>
+                <p><i>
+                    <ul>
+                        <li>Jabón líquido con antiséptico (solución jabonosa de clorhexidina o povidona yodada), en dispensador desechable, con dosificador.</li>
+                        <li>Cepillo de uñas desechable (preferiblemente impregnado en solución antiséptica).</li>
+                        <li>Toalla o compresa estéril.</li>
+                    </ul>
+                </i></p>
+                <b><i>Técnica:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Abrir el grifo (sólo lavabos con sistema de codo o pedal).</li>
+                            <li>Aplicar jabón antiséptico.</li>
+                            <li>Lavado mecánico de manos y antebrazos y limpiar debajo de las uñas con cepillo desechable.</li>
+                            <li>Aclarar con agua corriente abundante.</li>
+                            <li>Aplicar de nuevo jabón antiséptico en manos y antebrazos friccionando al menos 2 MINUTOS.</li>
+                            <li>Aclarar con agua abundante.</li>
+                            <li>Secar por aplicación, sin frotar, con una compresa o toalla desechable estéril, comenzando por los dedos y bajando hasta los codos.</li>
+                            <li>Durante todo el proceso, mantener las manos por encima de los codos.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>Indicaciones:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Antes de una intervención quirúrgica.</li>
+                            <li>Antes de cualquier maniobra invasiva que requiera alto grado de asepsia.</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>RECOMENDACIONES</i></b>
+                <p>
+                    <i>
+                        Mantener las uñas cortas y limpias. Las uñas largas son más difíciles de limpiar y aumentan el riesgo de rotura de guantes. No llevar uñas artificiales.
+                        No usar anillos, relojes, ni pulseras. Estos elementos pueden actuar como reservorio y dificultan la limpieza de manos y antebrazos.
+                        El uso de emolientes y lociones protectoras de la piel, después de la actividad laboral, se considera deseable e incluso recomendable en la práctica diaria,
+                        porque pueden aumentar la resistencia de la piel a los gérmenes y, por tanto, disminuir la infección cruzada. Sin embargo, 
+                        hay que tener en cuenta que algunos antisépticos se inactivan en presencia de algunos de estos productos.
+                    </i>
+                </p>
+                <br>
+                <b><i>DEFINICIÓN</i></b>
+                <p>
+                    <i>
+                        Medida de higiene consistente en la eliminación mediante arrastre de la flora presente de manera transitoria en la piel de las manos. 
+                        Se considera una de las medidas más eficaces en la prevención y control de la transmisión de enfermedades infecciosas dentro del ámbito hospitalario.
+                    </i>
+                </p>
+                <b><i>RECURSOS MATERIALES:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Lavabo con agua tibia .Si fuera posible la llave del lavabo accionable con el codo, el pie o la rodilla</li>
+                            <li>Jabonera: dosificadora, Pastilla de jabón o Antiséptico jabonoso (optativo + cepillo)</li>
+                            <li>Toallas de papel</li>
+                            <li>Loción hidratante</li>
+                        </ul>
+                    </i>
+                </p>
+                <b><i>OBJETIVOS</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Disminuir el número de microorganismos en las manos</li>
+                            <li>Disminuir el riesgo de transmisión de microorganismos a los pacientes</li>
+                            <li>Disminuir el riesgo de transmisión cruzada entre pacientes</li>
+                            <li>Disminuir el riesgo de infección entre trabajadores sanitarios</li>
+                            <li>Disminuir el riesgo de transmisión de infección a uno mismo</li>
+
+                        </ul>
+                    </i>
+                </p>
+                <b><i>¿QUIÉN?</i></b>
+                <p><i>Todo el personal.</i></p>
+                <b><i>¿CUÁNDO?</i></b>
+                <p>
+                    <i>
+                        Antes y después del contacto con el paciente.
+                        Después de quitarse los guantes.
+                    </i>
+                </p>
+                <b><i>PREVIO AL PROCEDIMIENTO</i></b>
+                <p><i>Es recomendable:
+                    llevar las uñas cortas, retirar sortijas y joyas, revisar las manos buscando la existencia de algún tipo de lesión, usar lociones hidratantes.</i>
+                </p>
+                <br>
+                <b><i>PROCEDIMIENTO</i></b>
+                <p><i>
+                    <ol>
+                        <li>Accione el grifo (con el codo si es posible) y mójese manos y muñecas con agua tibia*.</li>
+                        <li>Sostenga las manos bajas en relación con los codos para evitar contaminar regiones del lavabo limpias.</li>
+                        <li>Evite salpicaduras.</li>
+                        <li>Absténgase de tocar los grifos y el lavabo.</li>
+                        <li>Si usa jabón en pastilla: enjuáguela antes de regresarla a la jabonera. Si es jabonera dosificadora acciónela con el codo tomando de dos a cuatro mililitros.</li>
+                        <li>Enjabónese enérgicamente frotando y entrelazando los dedos con fuerza y movimientos circulares durante diez segundos. Preste especial atención a las zonas subungueales, alrededor de la cutícula, pulgares, nudillos y lados de la mano.</li>
+                        <li>Aclarar bien manos y muñecas SIN escurrir el agua hacia los codos.</li>
+                        <li>Secar manos y muñecas aplicando leves toques con la toallita de papel.</li>
+                        <li>Cerrar el grifo cogiéndolo con la toallita de papel si éste no se puede accionar con el codo o el pie. Desecharla en el recipiente adecuado.</li>
+                        <li>Limpiar y desinfectar periódicamente los dispensadores de jabón y su contenido**.</li>
+                        <li>El uso de jabones antisépticos debe ser restringido a: Zonas con resistencias bacterianas, Unidades de Cuidados Críticos; salas de Neonatos, y antes de la realización de cualquier procedimiento invasivo***.
+                        </li>
+                    </ol>
+                </i></p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock %}

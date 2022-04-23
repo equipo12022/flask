@@ -1,0 +1,87 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('cursos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/anatomía3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark"><b><i></i></b></h5>
+                            <p class="bg-dark"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                <h1 class="text-center"><i class="text-muted"><b>Anatomia del Cuerpo Humano</b></i></h1>
+                <i>
+                    <h6 class=""><b><i>Consepto:</i></b></h6> Es la rama de las ciencias biológicas que trata de la
+                    forma y estructura de los organismos. Se halla
+                    íntimamente ligada con la fisiología.
+                </i>
+                </p>
+                <p>
+                    <i> Es una rama de las ciencias biológicas que trata de las funciones normales del Cuerpo
+                        Se emplean dos métodos especiales para el estudio de la anatomía, el sistemático y el
+                        topográfico.En
+                        el primero se considera el cuerpo formado por sistemas de órganos o aparatos que son similares
+                        por
+                        su origen y estructura y están asociados en la realización de ciertas funciones.
+                    </i>
+                </p>
+
+                <ol class="navbar-nav">
+                    <p>
+                        <i> Existen cuatro tejidos básicos, que son el epitelial, el conjuntivo, el muscular y el
+                            nervioso, con los que
+                            el organismo se relaciona, se protege, secreta sustancias, mantiene su forma, se desplaza,
+                            coordina
+                            sus funciones y relaciones con el medio.
+                            <p><b><i>Las divisiones de la anatomía sistemática son:</i></b></p>
+                        </i>
+                    </p>
+                    <li><i>1. Osteología: Descripción del esqueleto.</i></li>
+                    <li><i>2. Artrología: Descripción de las articulaciones.</i></li>
+                    <li><i>3. Miología: Descripción de los músculos.</i></li>
+                    <li><i>4. Esplacnología: se subdivide en:</i></li>
+                    <ul>
+                        <li><i>a. Sistema Digestivo</i></li>
+                        <li><i>b. Sistema Respiratorio</i></li>
+                        <li><i> c. Sistema Urogenital: que se divide en:</i></li>
+                        <ul>
+                            <li><i>Órganos Urinarios</i></li>
+                            <li><i>Órganos Genitales</i></li>
+                        </ul>
+                    </ul>
+
+                    <li><i>5. Angiología: Descripción de los órganos de la circulación.</i></li>
+                    <li><i>6. Neurología: Descripción del sistema nervioso.</i></li>
+                    <li> <i> 7. Estiología: Descripción de los órganos de los sentidos.</i></li>
+                    <p> <i>El termino anatomía topográfica designa los métodos con que se determinan exactamente las
+                            posiciones relativas de varias partes del cuerpo, presupone un conocimiento de la anatomía
+                            sistémica</i>
+                    </p>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

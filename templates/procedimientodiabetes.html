@@ -1,0 +1,131 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Diabetes</b></i></h1>
+                    <i>
+                        <h6 class=""><b><i>Consepto:</i></b></h6>
+                        La diabetes es una enfermedad que se presenta cuando el nivel de glucosa en la sangre, también conocido como azúcar en la sangre, es demasiado alto. 
+                        <br>
+                        La glucosa en la sangre es la principal fuente de energía y proviene de los alimentos. La insulina, una hormona que produce el páncreas, ayuda a que la glucosa de los alimentos ingrese en las células para usarse como energía. 
+                        Algunas veces, el cuerpo no produce suficiente o no produce nada de insulina o no la usa adecuadamente y la glucosa se queda en la sangre y no llega a las células.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <b>¿Cuáles son los diferentes tipos de diabetes?</b> <br>
+                        <b>Los principales tipos de diabetes son tipo 1, tipo 2 y la diabetes gestacional.</b>
+                        <ul>
+                            <li><b>Diabetes tipo 1</b> <br>
+                                Con la diabetes tipo 1, el cuerpo no produce insulina porque el sistema inmunitario ataca y destruye las células del páncreas que la producen. Por lo general, se diagnostica la diabetes tipo 1 
+                                en niños y adultos jóvenes, aunque puede aparecer a cualquier edad. 
+                                Las personas con diabetes tipo 1 tienen que usar insulina todos los días para sobrevivir.
+                            </li>
+                            <li>
+                               <b> Diabetes tipo 2</b> <br>
+                                Con la diabetes tipo 2, el cuerpo no produce o no usa la insulina adecuadamente. La diabetes tipo 2 puede aparecer a cualquier edad, incluso durante la infancia. Sin embargo,
+                                este tipo de diabetes se presenta con mayor frecuencia en las personas de mediana edad y en los ancianos. Este es el tipo más común de diabetes.
+                            </li>
+                            <li> <b>Diabetes gestacional</b> <br>
+                                La diabetes gestacional afecta a algunas mujeres durante el embarazo. La mayoría de las veces, este tipo de diabetes desaparece después de que nazca el bebé. Sin embargo, 
+                                cuando una mujer ha tenido diabetes gestacional, tiene más probabilidad de sufrir de diabetes tipo 2 más adelante en la vida. 
+                                A veces, la diabetes que se diagnostica durante el embarazo es en realidad diabetes tipo 2.</li>
+                        </ul>
+                        
+
+
+
+
+                    </i>
+                </p>
+                <p>
+                    <i>
+                        <br>
+                        <b>Diagnóstico</b> <br>
+                        Con frecuencia, los síntomas de la diabetes tipo 1 aparecen de forma repentina y son la causa de control del nivel de glucosa en la sangre. 
+                        Dado que los síntomas de otros tipos de diabetes y prediabetes se manifiestan de forma más gradual y no son evidentes, la Asociación Estadounidense para la Diabetes (ADA, por sus siglas en inglés) 
+                        ha recomendado pautas para la detección. La Asociación Estadounidense para la Diabetes recomienda que se realicen análisis de detección de diabetes en las siguientes personas:
+                        <ul>
+                            <li>Cualquier persona con un índice de masa corporal superior a 25 (23 para los estadounidenses de origen asiático), independientemente de la edad, que presente factores de riesgo adicionales, 
+                                como presión arterial alta, niveles anormales de colesterol, un estilo de vida sedentario, antecedentes de síndrome de ovario poliquístico o enfermedad cardíaca, y que tenga un pariente cercano con diabetes.</li>
+                            <li>Se aconseja que cualquier persona mayor de 45 años se realice un examen de detección inicial de glucosa en la sangre, y después, si los resultados son normales, hacer controles cada tres años.</li>
+                            <li>Mujeres que han tenido diabetes gestacional. Se recomienda que se realicen pruebas de detección de diabetes cada tres años.</li>
+                            <li> Cualquier persona que haya sido diagnosticada con prediabetes. Se aconseja que se realicen la prueba todos los años.
+                            </li>
+                        </ul>
+                        <br>
+                       <b> Pruebas para la diabetes tipo 1, la diabetes tipo 2 y la prediabetes:</b> <br>
+                        <ul>
+                            <li>Prueba de hemoglobina glucosilada (A1C). Este análisis de sangre, que no requiere ayuno, indica tu nivel de glucosa sanguínea promedio en los últimos dos a tres meses.
+                                Mide el porcentaje de glucosa sanguínea unida a la hemoglobina, la proteína que transporta oxígeno en los glóbulos rojos.</li>
+                        </ul>
+                        <br>
+
+                        Cuantos más altos sean tus niveles de glucosa sanguínea, mayor será la cantidad de hemoglobina con azúcar. Un nivel del 6,5 % o más en dos pruebas de hemoglobina glucosilada separadas indica que tienes diabetes.
+                         Un nivel de entre el 5,7 y 6,4 % en esta prueba indica prediabetes. Un nivel por debajo del 5,7 % se considera normal.
+
+                        Si los resultados de la prueba de hemoglobina glucosilada no son consistentes, la prueba no está disponible o tiene ciertas condiciones que pueden hacer que sea inexacta, por ejemplo, 
+                        si estás embarazada o tienes una forma poco común de hemoglobina (conocida como una variante de hemoglobina), el médico puede utilizar las siguientes pruebas para diagnosticar la diabetes: 
+                        <br>
+                        <ul>
+                            <li><b> Examen aleatorio de glucosa sanguínea. </b> Se tomará una muestra de sangre en un horario al azar. Independientemente de la última vez que comiste, un nivel de glucosa sanguínea de 200 miligramos por decilitro (mg/dL), 
+                                es decir, 11,1 milimoles por litro (mmol/L) o más sugiere diabetes.</li>
+                            <li><b> Examen de glucemia en ayunas.</b>  Se tomará una muestra de sangre después de una noche de ayuno. Un nivel de glucosa sanguínea en ayunas menor que 100 mg/dL (5,6 mmol/L) es normal. 
+                                Un nivel de glucosa sanguínea en ayunas entre 100 y 125 mg/dl (5,6 a 6,9 mmol/l) se considera prediabetes. Si el resultado es 126 mg/dL (7 mmol/L) o más en distintos análisis, tienes diabetes.</li>
+                            <li><b> Examen de tolerancia oral a la glucosa. </b> Para esta prueba, debes ayunar durante la noche, y se mide el nivel de glucosa sanguínea en ayunas. Luego, debes beber un líquido azucarado, 
+                                y se mide el nivel de glucosa sanguínea periódicamente durante las siguientes dos horas.</li>
+                        </ul>
+                        <br>
+                        Un nivel de glucosa sanguínea inferior a 140 mg/dL (7,8 mmol/L) es normal. Un valor de más de 200 mg/dL (11,1 mmol/L) después de dos horas indica diabetes.
+                         Un resultado de entre 140 y 199 mg/dL (7,8 y 11,0 mmol/L) indica prediabetes.
+
+                        Si existen sospechas de diabetes tipo 1, se realizará un análisis de orina para detectar la presencia de un subproducto que se produce al utilizarse tejido muscular y tejido adiposo como fuente de energía porque 
+                        el organismo no cuenta con insulina suficiente para usar la glucosa disponible (cetonas). El médico probablemente te realizará una prueba para ver si tienes las células destructoras del sistema inmunitario asociadas con
+                         la diabetes tipo 1, llamadas autoanticuerpos. <br>
+                         
+                        <b>Pruebas para la diabetes gestacional</b> <br>
+                        <br>
+                        Tu médico probablemente evalúe tus factores de riesgo de diabetes gestacional en la primera etapa del embarazo:
+                        <ul>
+                            <li><b>Si presentas riesgo de padecer diabetes gestacional, </b> por ejemplo, si tenías obesidad al comenzar tu embarazo; si tuviste diabetes gestacional durante un embarazo anterior; o si tu madre, tu padre, 
+                                un hermano o un hijo tienen diabetes, tu médico puede realizarte la prueba de detección de diabetes durante la primera visita prenatal.</li>
+                            <li> <b>Si estás en riesgo promedio de padecer diabetes gestacional, </b> probablemente te hagan un análisis para la detección de diabetes gestacional en algún momento del segundo trimestre,
+                                generalmente entre las 24 y las 28 semanas de embarazo.</li>
+                        </ul>
+                        Tu médico puede indicar los siguientes exámenes para la detección:
+                        <ul>
+                            <li><b> Prueba de sobrecarga de glucosa inicial.</b><br>  Comenzarás la prueba de sobrecarga de glucosa bebiendo una solución de glucosa similar a un jarabe. Una hora después,
+                                te realizarán un análisis de sangre para medir el nivel de azúcar en sangre. Un nivel de azúcar en sangre inferior a 140 mg/dL (7.8 mmol/L) generalmente se considera normal en una prueba de tolerancia a la glucosa, 
+                                aunque esto puede variar en clínicas o laboratorios específicos.
+                            </li>
+                            <br>
+                            Si tu nivel de azúcar en sangre es más alto que lo normal, solo significa que tienes un riesgo mayor de padecer diabetes gestacional. Tu médico te indicará una prueba de seguimiento para determinar
+                            si tienes diabetes gestacional.
+                            <br>
+                            <li> <b>Prueba de tolerancia a la glucosa de seguimiento.</b> <br> Para la prueba de seguimiento, te pedirán que ayunes durante una noche y te medirán el nivel de azúcar en sangre en ayunas. Luego beberás otra solución dulce, 
+                                que tendrá una concentración mayor de glucosa, y se controlará tu nivel de azúcar en sangre cada hora durante un periodo de tres horas.</li>
+                        </ul>
+                        Si al menos dos de los valores de azúcar en sangre son más altos que los valores normales establecidos para cada una de las tres horas de la prueba, te diagnosticarán diabetes gestacional.
+                    </i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock %}

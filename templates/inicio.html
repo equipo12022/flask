@@ -1,0 +1,93 @@
+<!--  EsqueetAppEnfermeria.html -->
+{% extends'estructura.html'%}
+{% block contenedor%}
+<section class="container-lg container-md container-sm">
+    <!--  CONTENIDO DE LAS IMAGENES -->
+    <div class="bg-light">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/static/img/enfermeria6.jpg" class="d-block w-100" alt="100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><b><i>Clinic of Country</i></b></h5>
+                        <p class="bg-dark"><b></b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/enfermeria4.jpg" class="d-block w-100" alt="100">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><b><i>Clinic of Country<</i></b></h5>
+                        <p class="bg-dark"><b></b></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/static/img/enfermeria2.jpg" class="d-block w-100" alt="50">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="text-dark"><b><i>Clinic of Country<</i></b></h5>
+                        <p class="bg-dark"><b></b></p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Atras</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- INICIO DE SECCTION -->
+<br>
+<section class="container">
+    <div class="row">
+        <h1 class="text-center "><b><i>System Core Clinic of Country</i></b></h1>
+        <br>
+        <!-- COLUMNA DE TEXT 0-->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <p class="text-center">
+                <b>
+                    <i>=========================================
+
+                    </i>
+                </b>
+            </p>
+        </div>
+        <!-- COLUMNA DE TEXT 1-->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+          <p  class="text-muted"><i><b class="">Hola le damos la cordial bienvenida a nuestro sistema que tiene como finalidad realizar control y registros
+            de nuestro centro medico, como personal y paciente, </b></i></p>
+        </div>
+        <!-- COLUMNA DE TEXT 2-->
+        <div class="col-sm-4 col-md-12 col-lg-12">
+          <p  class="text-muted"><i> <b class="">
+            ademas de ello nuestro sistema integrara un conjunto de sensores 
+            que tiene la capacidad de detectar entradas, salidas y departamentos disponibles, </b></i></p>
+        </div>
+        <!-- COLUMNA DE TEXT 3-->
+        <div class="col-sm-6 col-md-12 col-lg-12">
+            <p  class="text-muted"><i> <b>
+                para hospitalizacion de pacientes,
+              para finalizar  agregamos material extra que te servira para tu aprendizaje.</b></i></p>
+        </div>
+
+      </div>
+</section>
+
+
+{% endblock%}

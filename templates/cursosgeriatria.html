@@ -1,0 +1,66 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('cursos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/cursogeriatria.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark"><b><i></i></b></h5>
+                            <p class="bg-dark"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Geriatria</b></i></h1>
+                    <i>
+                        <h6 class=""><b><i>Consepto:</i></b></h6> La geriatría es la rama de la medicina que se preocupa de los problemas y enfermedades de los adultos mayores, 
+                        cómo prevenirlas y manejarlas, y del proceso de envejecer. No sólo del aspecto médico, sino también de aspectos 
+                        psicológicos y sociales que habitualmente acompañan este proceso.
+                    </i>
+                </p>
+                <h5>Quienes necesitan Cuidados</h5>
+                <ul><li>Mayores de 65 años</li>
+                    <li>Mayores de 65 años con más de tres enfermedades crónicas</li>
+                    <li>Pacientes mayores de 80 años, con o sin patología crónica</li>
+                    <li>Pacientes que presentan enfermedades propias del envejecimiento</li>
+                    <li>Adultos mayores institucionalizados en casas de reposo</li>
+                </ul>
+
+                <h5>Objetivos</h5>
+                <p>
+                    <i>
+                        El objetivo prioritario de la geriatría es lograr el
+                        mantenimiento y la recuperación funcional del
+                        adulto mayor para conseguir el máximo nivel de
+                        autonomía e independencia, de tal manera que
+                        se facilite su reinserción a una vida autosuficiente en el núcleo familiar y el entorno habitual
+                    </i>
+                </p>
+
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

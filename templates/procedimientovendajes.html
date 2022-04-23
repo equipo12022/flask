@@ -1,0 +1,138 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento de Vendajes</b></i></h1>
+                    <i>
+                        <b><i>Técnica</i></b>
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Retire la ropa, anillos, pulseras de la zona a vendar.</li>
+                            <li>Coloque el miembro en posición funcional.</li>
+                            <li>Compruebe pulsos distales</li>
+                            <li>Desenrolle poco a poco la venda, contactando la parte exterior del rollo con el paciente.</li>
+                            <li>Inicie el vendaje desde la zona más distal a proximal.</li>
+                            <li>Comience con vueltas circulares para fijar el vendaje.</li>
+                            <li>Aplique el vendaje con una tensión homogénea.</li>
+                            <li>No deje espacios libres de venda entre vuelta y vuelta, ni pliegues.</li>
+                            <li>Utilice vendas del tamaño adecuado a la zona.</li>
+                            <li>Termine el vendaje con vueltas circulares.</li>
+                            <li>Fije el vendaje.</li>
+                            <li>Compruebe de nuevo que los pulsos distales, la coloración y la temperatura del miembro son normales, y que no hay sensación de hormigueo.</li>
+                            <li>Si es posible eleve la extremidad.</li>
+                            <li>El vendaje se utiliza para:
+                                <ul>
+                                    <li>Sujetar apósitos</li>
+                                    <li>Fijar entablillados</li>
+                                    <li>Fijar articulaciones</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>Tipos de vendajes</i></b>
+                <p>
+                    <i>
+                        <b>Cabestrillo: <br> se utiliza para sostener la mano, brazo o antebrazo, en caso de heridas, quemaduras, fracturas, esguinces y luxaciones. </b>
+                        <ul>
+                            <li>Coloque el antebrazo de la víctima ligeramente oblicuo, quedando la mano más alta que el codo.</li>
+                            <li>Sitúese detrás de la víctima y coloque la venda triangular extendida.</li>
+                            <li>Lleve el extremo inferior de la venda hacia el hombro del brazo lesionado.</li>
+                            <li>Sujete los dos extremos de la venda con un nudo hacia un lado del cuello (del lado lesionado) nunca sobre los huesos de la columna vertebral.</li>
+                            <li>Deje los dedos descubiertos para controlar el color y la temperatura.</li>
+                        </ul>
+                        <b>Vendaje circular: <br>  Se usa para fijar el extremo inicial y final de una inmovilización. fijar un apósito, iniciar y/o finalizar un vendaje, sujetar apósitos en la frente, miembros superiores e inferiores, controlar hemorragias.</b>
+                        <ul>
+                            <li>Superponga la venda de forma que tape completamente la anterior.</li>
+                        </ul>
+                        <b>Vendaje espiral: <br> se utiliza generalmente en extremidades. En este caso, la venda cubre los 2/3 de la vuelta anterior, y se sitúa algo oblicua al eje de la extremidad.
+                            Se emplea una venda elástica porque puede adaptarse a la zona que se va a vendar. Se usa para sujetar gasa, apósitos o férulas en brazo, antebrazo, mano, muslo y pierna.
+                        </b>
+                        <ul>
+                            <li>Inicie el vendaje siempre en la parte más distante del corazón en dirección a la circulación venosa. Con vueltas circulares para fijar el vendaje.</li>
+                            <li>Evite vendar una articulación en extensión, porque al doblarlo dificulta su movimiento.</li>
+                            <li>De ser posible, no cubra los dedos de las manos o de los pies.</li>
+                        </ul>
+                        <b>Vendaje en ocho o tortuga: <br> se utiliza en las articulaciones (tobillo, rodilla, hombro, codo, muñeca), ya que permite a estas tener una cierta movilidad.</b>
+                        <ul>
+                            <li>
+                                Dirija la venda de forma alternativa hacia arriba y después hacia abajo, de forma que, en la parte posterior, la venda siempre pase y se cruce en el centro de la articulación.
+                                </li>
+                            <li>Coloque la articulación ligeramente flexionada y efectúe una vuelta circular en medio de la articulación.</li>
+                        </ul>
+                        <b>Vuelta recurrente: <br> se usa en las puntas de los dedos, manos o muñones de amputación.</b>
+                        <ul>
+                            <li>Después de fijar el vendaje con una vuelta circular, lleve el rollo hacia el extremo del dedo o muñón y regrese hacía atrás.</li>
+                            <li>Haga un doblez y regrese hacia la parte distal.</li>
+                            <li>Finalmente, fije con una vuelta circular.</li>
+                        </ul>
+                        <br>
+                        <b>Vendaje para codo o rodilla:</b>
+                        <ul>
+                            <li>Con la articulación semiflexionada, efectúe dos vueltas circulares en el centro de ésta, para, posteriormente, proseguir con cruces en ocho, alternos sobre brazo y antebrazo, o pierna y muslo.</li>
+                            <li>Este tipo de vendaje no debe inmovilizar totalmente la articulación.</li>
+                        </ul>
+                        <br>
+                        <b>Vendaje para tobillo o pie:</b>
+                        <ul>
+                            <li>Comience con dos vueltas circulares a nivel del tobillo.</li>
+                            <li>Efectúe varias vueltas en ocho que abarquen, alternativamente, pie y tobillo, remontando de la parte distal hacia la proximal, para terminar con dos vueltas circulares a la altura del tobillo y la fijación de la venda.</li>
+                        </ul>
+                        <br>
+                        <b>Vendaje para manos y dedos:</b>
+                        <ul>
+                            <li>Inicie este vendaje haciendo dar dos vueltas circulares a nivel de la muñeca.</li>
+                            <li>Desplace la venda hacia el dedo, y realice 2 vueltas recurrentes, que deben ser fijadas con dos circulares a nivel del dedo.</li>
+                            <li>Para terminar la operación, siga con varias espirales en ocho entre el dedo y la muñeca, para finalmente acabar con dos circulares de fijación a nivel de la muñeca.</li>
+                        </ul>
+                        <br>
+                        <b>Vendaje para el ojo:</b>
+                        <ul> 
+                            <li>Proteja al ojo con un apósito.</li>
+                            <li>De dos vueltas circulares a nivel de la frente sujetando el borde superior del apósito.</li>
+                            <li>Descienda la venda hacia el ojo afectado.Tape éste y pásela por debajo de la oreja del mismo lado.</li>
+                            <li>Repita esta maniobra, tantas veces como sea necesario, para tapar completamente el ojo.</li>
+                        </ul>
+                        <br>
+                        <b>Vendaje para la cabeza o capelina (dos sanitarios):</b>
+                        <ul>
+                            <li>Inice el vendaje efectuando una vuelta circular en sentido horizontal alrededor de la cabeza.</li>
+                            <li>Realice un doblez de 90º al finalizar la primera vuelta, continuando el vendaje en sentido sagital, siguiendo la línea media de la bóveda craneana hasta encontrarse a nivel de la primera vuelta.</li>
+                            <li>El sanitario libre sujetará los dobleces, mientras el que maneja la venda realiza una nueva vuelta circular de modo que queden aprisionandos los dos dobleces de los tramos sagitales.</li>
+                            <li>De esta forma vaya efectuando vueltas recurrentes intercalándolas con los tramos sagitales.</li>
+                            <li>Termine con dos vueltas circulares.</li>
+                            <li>Fije el vendaje con esparadrapo.</li>
+                            <li>Recuerde mantener la tracción cervical en pacientes traumatizados.</li>
+                        </ul>
+                    </i>
+                    
+
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

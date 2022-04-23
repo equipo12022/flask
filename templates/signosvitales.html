@@ -1,0 +1,117 @@
+{% extends'estructura.html'%}
+<!--Aqui colocar la informacion de cada pagina-->
+{% block contenedor%}
+
+<!--=========== 1 SECTION ==============================-->
+<br>
+<section class="container">
+    <h2 class="text-center"><b class="text-muted"><i>SIGNOS VITALES</i></b></h2>
+    <br>
+    <div class="card-group row">
+        <div class="row row-cols-2 row-cols-md-3  row-cols-lg-5">
+
+            <!-- TARJETA 1-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="">
+                        <img src="/static/img/sign1.png" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><b class="text-muted"><i>F/Cardiaca</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('frecuenciacardiaca')}}" class="btn btn-outline-secondary border border-2 border_tem"><b ><i >Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>	
+            <!-- TARJETA 1-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="">
+                        <img src="/static/img/tem1.png" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><b class="text-muted"><i>Temperatura</i></b></h5>
+                        <br>
+                            
+                       <div  class="d-grid gap-1">
+                           <a href="{{url_for('temperatura')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                          <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA 1-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="">
+                        <img src="/static/img/resp1.png" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><b class="text-muted"><i>F/Respiratoria</i></b></h5>
+                        <br>
+                        <div  class="d-grid gap-1">
+                            <a href="{{url_for('tablarespiracion')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                           <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>	
+
+            <!-- TARJETA 1-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="">
+                        <img src="/static/img/tens1.png" class="card-img-top" class="card-img-top" alt="" >
+                        <br>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><b class="text-muted"><i>T/Arterial</i></b></h5>
+                        <br>
+
+                        <div  class="d-grid gap-1">
+                            <a href="{{url_for('tencionarterial')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                           <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>	
+
+            <!-- TARJETA 1-->
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card border border-3 border_card" style="width: 13rem;">
+                    <br>
+                   <div class="bg-light">
+                       <img src="/static/img/pus1.png" class="card-img-top" class="card-img-top" alt="...">
+                   </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><b class="text-muted"><i>Pulso</i></b></h5>
+                        <br>
+                        <div  class="d-grid gap-1">
+                            <a href="{{url_for('pulso')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                           <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>		
+        </div>
+    </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock%}

@@ -1,0 +1,78 @@
+{% extends 'estructura.html'%}
+
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('cursos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/cursoneonatologia.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark"><b><i></i></b></h5>
+                            <p class="bg-dark"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Neonatologia</b></i></h1>
+                    <i>
+                        <h6 class=""><b><i>Consepto:</i></b></h6>
+                        La neonatología es la rama de la medicina que comprende el estudio y la asistencia de las primeras horas de vida de 
+                        los recién nacidos, que se consideran cruciales para determinar posibles complicaciones futuras y reaccionar ante 
+                        ellas. La anamnesis perinatal, es decir, los hechos que permiten evaluar al neonato, está condicionada por los 
+                        antecedentes familiares, fisiológicos, patológicos, etc.
+                    </i>
+                </p>
+                <h5>Que enfermedades trata la neonatologia</h5>
+                <ol>
+                    <li>Diagnóstico y tratamiento de bebés con afecciones como trastornos respiratorios, infecciones y defectos congénitos.</li>
+                    <li>Coordinar el cuidado y el manejo médico de bebés prematuros, con enfermedades críticas o que necesitan de una cirugía.</li>
+                    <li>Garantizar que todos los recién nacidos con una enfermedad crítica reciban la nutrición adecuada para poder sanar y crecer debidamente.
+                    </li>
+                    <li>Atender a recién nacidos en partos por cesárea o partos que conllevan problemas médicos para la madre o el bebé y que pueden afectar la salud del bebé y requerir intervención médica en la sala de partos.
+                    </li>
+                    <li>Estabilizar y tratar a recién nacidos con cualquier problema médico que ponga en peligro su vida</li>
+                </ol>
+
+                <h5>¿Qué subepecialidad hay?</h5>
+                <p>
+                    <i>
+                        La neonatología es una especialidad dentro de la pediatría y a diferencia de otras especialidades, 
+                        la neonatología se dedica al estudio de un determinado periodo de la vida del niño, más específicamente hablando, de los 28 primeros días.
+                        Se considera una subespecialidad ya que es durante este periodo cuando se produce el proceso de adaptación que implica el paso de la vida 
+                        intrauterina a la extrauterina.<
+
+                    </i>
+                </p>
+                <h5>¿Cuánto hay que ir al Pediatra?</h5>
+                <p>
+                    <i>
+                        El experto que se encarga de tratar estas patologías es un pediatra especialista en neonatología. 
+                        Este especialista se centra en las alteraciones que puede desarrollar un recién nacido durante el periodo que transcurre desde su nacimiento hasta los 28 días.
+                        En la mayoría de los casos, los bebés todavía no están maduros, es decir, su organismo no funciona como un adulto. La visita a este especialista puede deberse a alteraciones en el recién nacido conocidas como “alteraciones de madurez”, que no se traducen como enfermedades, sino características del recién nacido. Estas alteraciones pueden ser digestivas, 
+                        como por ejemplo, falta de tolerancia al alimento, gases y cólicos entre otras.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

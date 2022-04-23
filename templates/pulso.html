@@ -1,0 +1,169 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4"><b class="text-muted"><i>Tabla de registros normales de Pulsos</i></b></h1>
+                    <br>
+                    <div class="card mb-4 border border-3 border_card">
+                        <div class="card-header">
+                            <i class="fas fa-table me-1"></i>
+                            Rangos Normales
+                        </div>
+                        <div class="card-body">
+                            <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                            <table id="datatablesSimple">
+                                <thead>
+                                    <tr class="table-warning">
+                                        <th><b><i>Adad</i></b></th>
+                                        <th><b><i>Pulso x Minutos</i></b></th>
+                                    </tr>
+                                </thead>
+                                <tfoot>
+                                    <tr>
+                                        <th><b><i>Adad</i></b></th>
+                                        <th><b><i>Pulso x Minutos</i></b></th>
+                                    </tr>
+                                </tfoot>
+                                <tbody>
+                                    <tr>
+                                        <th><b><i>Recien Nacido de 0 a 1 Mes</i></b></th>
+                                        <th><b><i>70 a 190 Latidos Por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Bebes de 1 a 11 Meses</i></b></th>
+                                        <th><b><i>80 a 160 Latidos Por Minutos</i></b></th>
+                                       
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Niños de 1 a 2 Años</i></b></th>
+                                        <th><b><i>80 a 130 Latidos Por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Niños de 3 a 4 Años</i></b></th>
+                                        <th><b><i>80 a 120 Latidos Por Minutos</i></b></td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Niños de 5 a 6 Años</i></b></th>
+                                        <th><b><i>75 a 115 Latidos Por Minutos</i></b></th>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Niños de 7 a 9 Años</i></b></th>
+                                        <th><b><i>70 a 110 Latidos Por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Niños de 10 o Mas</i></b></th>
+                                        <th><b><i>60 a 100 Latidos Por Minutos</i></b></th>
+                                    
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos  Hombres 20-29</i></b></th>
+                                        <th><b><i>60 Latidos Por Minutos</i></b></th>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Hombres 30-39</i></b></th>
+                                        <th><b><i>62 o Menos x por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Hombres 40-49</i></b></th>
+                                        <th><b><i>64 o Menos x por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Hombres de 50 o Mas</i></b></th>
+                                        <th><b><i>66 o Menos x por Minutos</i></b></th>
+                                    </tr>
+
+                                    <tr>
+                                        <th><b><i>Adultos Mujeres 20-29</i></b></th>
+                                        <th><b><i>70 o Menos x por Minutos</i></b></th>
+                                      
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Mujeres 30-39</i></b></th>
+                                        <th><b><i>70 o Menos x por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Mujeres 40-49</i></b></th>
+                                        <th><b><i>72 o Menos x por Minutos</i></b></th>
+                                    </tr>
+                                    <tr>
+                                        <th><b><i>Adultos Mujeres de 50 o Mas</i></b></th>
+                                        <th><b><i>74 o Menos x por Minutos</i></b></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <i>
+                        <b><i>Consepto:</i></b> 
+                        <br>
+                        El pulso es la frecuencia a la que late el corazón. o  es el número de latidos cardíacos por minuto
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <b>Forma en que se realiza el examen</b>
+                    <br>
+                    <i>
+                        El pulso se puede medir en zonas por las cuales la arteria pasa cerca de la piel. Estas incluyen:
+                        <ul>
+                            <li>La parte posterior de las rodillas</li>
+                            <li>La ingle</li>
+                            <li>El cuello</li>
+                            <li>La sien</li>
+                            <li>La parte alta o la cara interna del pie</li>
+                            <li>La muñeca</li>
+                        </ul>
+                        Para medir el pulso en su muñeca, coloque sus dedos índice y medio sobre la parte anterior de la muñeca opuesta, debajo de la base del pulgar. Presione con los dedos hasta que sienta el pulso. <br>
+                        Para medir el pulso en el cuello, coloque los dedos índice y medio al lado de la manzana de Adán en la depresión ligera y suave. Presione suavemente hasta que localice el pulso.
+                        Nota: siéntese o acuéstese antes de tomar el pulso del cuello. Las arterias del cuello en algunas personas son sensibles a la presión. Se puede presentar desmayo o disminución de los latidos cardíacos.
+                        Asimismo, no tome los pulsos en ambos lados del cuello al mismo tiempo. Hacer esto puede reducir el flujo de sangre a la cabeza y llevar a que se presente desmayo.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                         <ul>
+                             <li>El pulso que, generalmente, se conoce como frecuencia cardíaca, es el número de veces que late el corazón por minuto (lpm). 
+                                Sin embargo, también se pueden observar el ritmo y la fuerza de los latidos del corazón, así como si un vaso sanguíneo está duro o blando. 
+                                Los cambios en la frecuencia cardíaca o el ritmo, un pulso débil o un vaso sanguíneo duro podrían ser causados por enfermedades cardíacas o por otros problemas.</li>
+                             <li>Mientras su corazón bombea sangre por el cuerpo, puede sentir pulsaciones en algunos de los vasos sanguíneos cercanos a la superficie de la piel, como en la muñeca, 
+                                el cuello o la parte superior del brazo. Tomarse el pulso es una forma sencilla de saber la rapidez con la que está latiendo el corazón.</li>
+                             <li> Por lo general, su médico le revisa el pulso durante un examen físico o en caso de una emergencia, pero usted puede aprender fácilmente a tomar su propio pulso. 
+                                Puede tomarse el pulso a primera hora de la mañana, justo después de despertarse, pero antes de levantarse de la cama. Esto se conoce como pulso en reposo.
+                                 A algunas personas les gusta tomarse el pulso antes y después de hacer ejercicio.</li>
+                             <li>Se puede tomar el pulso contando los latidos en un período de tiempo (por lo menos de 15 a 20 segundos) y multiplicando esa cifra para obtener el número de latidos por minuto.
+                                El pulso cambia minuto a minuto. Será más rápido cuando haga ejercicio, tenga fiebre o esté bajo estrés. Será más lento cuando esté descansando.</li>
+                         </ul>
+                    </i>
+                </p>
+                <br>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

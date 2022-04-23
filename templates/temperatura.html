@@ -1,0 +1,134 @@
+{% extends 'estructura.html' %}
+
+{% block contenedor %}
+<section class="container">
+    <!-- BUTTON PARA RETROCESO-->
+    <div class="mt-4 mb-0">
+        <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+            <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+        </a>
+    </div>
+    <br>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <h1 class="mt-4"><b class="text-muted"><i>Tabla de registros de Temperatura</i></b></h1>
+                <br>
+                <div class="card mb-4 border border-3 border_card">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Rangos Normales
+                    </div>
+                    <div class="card-body">
+                        <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                        <table id="datatablesSimple">
+                            <thead>
+                                <tr class="table-warning">
+                                    <th><b><i>Escala Termica</i></b></th>
+                                    <th><b><i>Valores</i></b></th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th><b><i>Escala Termica</i></b></th>
+                                    <th><b><i>Valores</i></b></th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr class="table-primary">
+                                    <th><b><i>Hipotermia muy Profunda</i></b></th>
+                                    <th><b><i>Inferior a los 17°C</i></b></th>
+                                </tr>
+                                <tr class="table-primary">
+                                    <th><b><i>Hipotermia Profunda</i></b></th>
+                                    <th><b><i>Entre 17°C a 28°C </i></b></th>
+                                </tr>
+                                <tr class="table-primary">
+                                    <th><b><i>Hipotermia Ligera</i></b></th>
+                                    <th><b><i>Entre 28°C a 35°C</i></b></th>
+                                </tr>
+                                <tr class="table-success">
+                                    <th><b><i>Temperatura Normal</i></b></th>
+                                    <th><b><i>Entre 36°C asta 37.8°C</i></b></th>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th><b><i>Febricula</i></b></th>
+                                    <th><b><i>Entre 37.4°C a 39°C</i></b></th>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th><b><i>Fiebre Moderada</i></b></th>
+                                    <th><b><i>Entre 38°C a 38.9°C</i></b></th>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th><b><i>Fiebre Alta</i></b></th>
+                                    <th><b><i>Entre 39°C a 39.9°C</i></b></th>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th><b><i>Fiebre muy Alta</i></b></th>
+                                    <th><b><i>Entre 40°C a 41.5°C</i></b></th>
+                                </tr>
+                                <tr class="table-danger">
+                                    <th><b><i>Hiperpirexia</i></b></th>
+                                    <th><b><i>> 41.5°C</i></b></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+     <!--  CONTENIDO DE LAS IMAGENES -->
+     <div class="row col-sm-12 col-md-12 col-lg-12">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <p class="list-unstyled small text-muted fs-6">
+                <i>
+                    <h6 class=""><b><i>Consepto:</i></b></h6>
+                    La temperatura corporal normal cambia según la persona, la edad, las actividades y el momento del día. La temperatura corporal normal promedio aceptada es generalmente de 98.6°F (37°C).
+                    Algunos estudios han mostrado que la temperatura corporal "normal" puede tener un amplio rango que va desde los 97°F (36.1°C) hasta los 99°F (37.2°C). <br>
+                    <br>
+                    Una temperatura de más de 100.4°F (38°C) casi siempre indica que usted tiene fiebre a causa de una infección o enfermedad. <br>
+                    Normalmente, la temperatura corporal cambia a lo largo del día.
+                </i>
+            </p>
+            <br>
+            <b>Fiebre</b>
+            <p>
+                <i>
+                    En la mayoría de los adultos, se considera fiebre una temperatura oral superior a 100.4°F (38°C) 
+                    o una temperatura en el recto o en el oído superior a 101°F (38.3°C). Un niño tiene fiebre cuando su temperatura rectal es de 100.4°F (38°C) o más alta.
+                </i>
+            </p>
+            <br>
+            <b>La fiebre podría ser una reacción a:</b>
+            <p>
+                <i>
+                    <ul>
+                        <li>Una infección. Esta es la causa más común de fiebre. Las infecciones pueden afectar a todo el cuerpo o a una parte del cuerpo.</li>
+                        <li>Medicamentos. Estos incluyen antibióticos, opioides, antihistamínicos y muchos otros. Esto se llama "fiebre medicamentosa". 
+                            Los medicamentos como los antibióticos elevan la temperatura corporal directamente. Otros medicamentos evitan que el cuerpo restablezca su temperatura cuando otras cosas hacen que la temperatura se eleve.</li>
+                        <li>Trauma grave o lesión. Esto puede incluir ataque cardíaco, ataque cerebral, golpe de calor o quemaduras.</li>
+                        <li>Otras afecciones médicas. Estas incluyen artritis, hipertiroidismo, e incluso algunos cánceres, como leucemia y cáncer de pulmón.</li>
+                    </ul>
+                </i>
+            </p>
+            <br>
+            <b>Temperatura corporal baja (hipotermia)</b>
+            <p>
+                <i>
+                    <ul>
+                        Si su único síntoma es una temperatura corporal baja, esto no es motivo de preocupación. 
+                        Si la temperatura corporal baja ocurre junto con otros síntomas, como escalofríos, temblores, problemas respiratorios o confusión, esto puede ser una señal de una enfermedad más grave. <br>
+                        La temperatura corporal baja suele ocurrir como consecuencia de la exposición al frío. Pero también puede ser causada por el consumo de alcohol o drogas, el choque o determinados trastornos como la diabetes o el hipotiroidismo. <br>
+                        Una temperatura corporal baja también puede presentarse en caso de infección. Esto es más común en recién nacidos, adultos mayores o personas débiles. Una infección muy grave, como la septicemia, también puede dar lugar a una temperatura corporal anormalmente baja.
+                        
+                    </ul>
+                </i>
+            </p>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

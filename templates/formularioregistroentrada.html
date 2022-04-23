@@ -1,0 +1,71 @@
+{% extends 'estructura.html' %}
+{%block contenedor%}
+<section class="container">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <!-- BUTTON PARA RETROCESO-->
+                            <div class="mt-4 mb-0">
+                                <a href="{{url_for('registro_entrada')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                                    <button  class="btn btn-outline-secondary  border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+                                </a>
+                            </div>
+                            <div class="card shadow-lg border-3 rounded-lg mt-5 border border-4 border_tem">
+                    
+                                <div class="card-header"><h2 class="text-center font-weight-light my-4"><b class="text-muted"><i>Registro de Sensores</i></b></h2></div>
+                                <div class="card-body">
+                                    <form method="POST" action="{{url_for('save_data_registroentrada')}}">
+                                        <div class="row mb-3">
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control  border_tem" id="Puerta" name="Puerta" type="text" placeholder="Enter your first name" />
+                                                    <label for="inputFirstName"><b><i>Puerta</i></b></label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control  border_tem" id="Sala A Cama 1" name="salaacama1" type="text" placeholder="Enter your last name" />
+                                                    <label for="inputLastName"><b><i>Sala A Cama 1</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control  border_tem" id="distanciacm" name="distanciacm" type="text" placeholder="Enter your first name" />
+                                                    <label for="inputFirstName"><b><i>Distancia cm</i></b></label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control  border_tem" id="fechaHora" name="fechaHora" type="date" placeholder="Enter your last name" />
+                                                    <label for="inputLastName"><b><i>Fecha de Entrada y Hora</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary border-2 border_tem"><b><i>Agregar Registro</i></b></button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center py-3">
+                                    <div class="small"><a href="login.html"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+</section>
+{% endblock %}

@@ -1,0 +1,103 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Manejo de Ropa</b></i></h1>
+                    <i>
+                       <b> Definición</b> <br>
+                        El lavadero hospitalario brinda el servicio de lavado, reacondicionamiento y planchado de todo material textil
+                        utilizado en el hospital y centros de salud. La finalidad del mismo es procesar la ropa sucia y contaminada
+                        convirtiéndola en ropa limpia y sin contaminación microbiana, que ayude al cuidado y confort del paciente, a
+                        la vez que protege al trabajador de salud. Los sectores destinados a esta actividad deberán contar con una
+                        infraestructura y equipamiento mínimo para el tipo y cantidad de textiles que procesan. 
+                    </i>
+                </p>
+                <br>
+                <b><i>Características</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Tener un sector sucio y un sector limpio bien delimitados y con accesos independientes, cada uno con
+                                piletas para el lavado de manos.</li>
+                            <li>Pared con pintura lavable u otro tipo de divisor de material lavable, que separe funcional y físicamente
+                                los sectores limpio y sucio. Tendrá puerta o ventana de comunicación interna.</li>
+                            <li>Las paredes y techos deben estar íntegros, sin presentar signos de humedad o deterioro, sus
+                                superficies deben ser de material lavable.</li>
+                            <li>El lugar de almacenamiento de la ropa limpia nunca debe compartirse con la sucia.</li>
+                            <li>Poseer mesadas, estanterías y armarios de material lavable diferentes para cada sector.</li>
+                            <li>El área sucia debe tener una presión negativa de aire respecto al área limpia.</li>
+                            <li> Contar con sistema de ventilación que permita más de 20 cambios de aire por hora.</li>
+                            <li>El trabajo debe ser en una sola dirección, de lo sucio a lo limpio.</li>
+                            <li>La expulsión y desagüe del agua será por la zona sucia.</li>
+                            <li>Poseer área para reacondicionamiento y/o costura de ropa hospitalaria, en lo posible independiente del
+                                resto del lavadero.</li>
+                            <li>Contar con áreas soporte como vestuario, baños y un sector para refrigerio (propias o compartidas con el
+                                resto del personal del hospital).</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>Generalidades</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Está prohibido comer dentro de cualquiera de las áreas del lavadero. Para el refrigerio, el personal
+                                deberá asistir al comedor de la institución o a un lugar aparte destinado para ese fin.</li>
+                            <li> Evitar el traslado de personal de un sector a otro. Si por alguna razón debiera hacerlo, deben lavarse
+                                las manos y cambiarse el uniforme en el vestuario (nunca con el mismo uniforme).
+                            </li>
+                            <li>Es recomendable que los lavaderos funcionen en horarios diurnos de lunes a sábados, en uno o dos
+                                turnos, dependiendo de la producción. Este descanso del equipamiento es necesario para lograr
+                                mayor vida útil. 
+                            </li>
+                            <li>Los horarios de recolección y entrega de ropa, se acordarán entre lavadero y sectores de donde viene
+                                la ropa. En el caso de los servicios tercerizados se establecerán en las cláusulas particulares anexas al
+                                pliego.
+                            </li>
+
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>Áreas del lavadero</i></b>
+                <p>
+                    <i>
+                        <b> Sector sucio:</b>
+                        <ol>
+                            <li>Recepción y pesaje de ropa.</li>
+                            <li>Clasificación y conteo de ropa.</li>
+                            <li>Prelavado.</li>
+                            <li>Lavado.</li>
+                        </ol>
+                        <b>Sector limpio</b>
+                        <ol>
+                            <li>Secado y planchado.</li>
+                            <li>Embalaje, empaquetado y depósito.</li>
+                            <li> Entrega de ropa limpia.</li>
+                        </ol>
+                        <b>Costura y reparación</b>
+                        <ol>
+                            <li> Reparación de prendas y recuperación de telas.</li>
+                            <li>Confección y rotulado de ropa nueva.</li>
+                        </ol>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

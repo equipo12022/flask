@@ -1,0 +1,116 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Analgesico</b></i></h1>
+                    <i>
+                        Los analgésicos o antiálgicos son aquellos medicamentos capaces de suprimir o aliviar la sensación dolorosa. Se trata de un segmento de mercado muy atomizado y con una importante presencia de genéricos.
+                        <br>
+                       <b>O tambien  </b> son medicinas que reducen o alivian los dolores de cabeza, musculares, artríticos o muchos otros achaques y dolores. <br> Existen muchos tipos diferentes de analgésicos y cada uno tiene sus ventajas y riesgos. Algunos tipos de dolor responden mejor a determinadas medicinas que a otras. Además, cada persona puede tener una respuesta ligeramente distinta a un analgésico.
+                        Los medicamentos de venta sin receta son buenos para combatir muchos tipos de dolor.  <br>
+
+                        Existen dos tipos principales de analgésicos sin receta: acetaminofén (Tylenol) y antiinflamatorios no esteroideos. La aspirina, el naproxeno (Aleve) y el ibuprofén (Advil, Motrin) 
+                        son ejemplos de antiinflamatorios no esteroideos sin receta. <br>
+                        Si los medicamentos sin receta no le alivian el dolor, el médico puede indicarle algo más fuerte. <br> Muchos de estos antiinflamatorios se encuentran disponibles en mayores dosis con receta médica. 
+                        Los analgésicos más potentes son los opioides. <br>  Estos son muy efectivos pero a veces pueden causar graves efectos secundarios. También está el riesgo de provocar adicción. Por ello, 
+                        usted debe tomarlos solamente bajo supervisión médica.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        El dolor, que puede definirse como una experiencia sensorial o emocional desagradable, acompaña a innumerables patologías de muy diversa etiología y gravedad. <br>
+                        Los receptores especiales de las sensaciones dolorosas son las terminaciones nerviosas libres. Los impulsos dolorosos tanto de las estructuras somáticas como de las viscerales se transmiten al cerebro por los nervios correspondientes y las estructuras de la médula espinal.
+                        Existen numerosas clasificaciones del dolor, aunque ninguna de ellas se haya impuesto por ser esencialmente complementarias.
+                        <br>
+                        La clasificación etiológica se basa en el origen de la enfermedad que causa el dolor. Hablamos entonces de dolor mecánico, degenerativo, post-traumático, neoplásico, etc. <br>
+                        Según la duración, hablaremos de dolor agudo (unos días o unas pocas semanas) y crónico, cuando persiste durante más tiempo, varios meses o años. <br>
+                        En cuanto al lugar de origen del dolor, podemos diferenciar entre dolor superficial somático (el que nace en la piel), profundo somático (el que se origina en los músculos, tendones, articulaciones, etc.) y profundo visceral (el que se produce en los órganos internos).
+                        Atendiendo a la intensidad del dolor, se habla de dolor de carácter leve, moderado, intenso o severo y muy intenso. <br>
+                        Los analgésicos o antiálgicos son aquellos medicamentos capaces de suprimir o aliviar la sensación dolorosa. Sin embargo, conviene recordar que, ante dolores constantes y persistentes es importante no tomar analgésicos hasta conocer exactamente el origen de este dolor.
+                     </i>
+                </p>
+                <br>
+                <b><i>Analgésicos mayores</i></b>
+                <p>
+                    <i>
+                        • Opiáceos y opioides. Son un grupo de fármacos que se utilizan principalmente en el tratamiento del dolor de gran intensidad y persistencia, como pueden ser los dolores postoperatorios y oncológicos.
+                        Son un grupo de fármacos, unos naturales (opiáceos) como la morfina y otros sintéticos (opioides) como el fentanilo, que actúan sobre los receptores opioides de las neuronas del sistema nervioso, 
+                        emulando el poder analgésico de los opiáceos endógenos.
+                        Dentro de este grupo encontramos también a los denominados opiáceos de baja potencia. Poseen, como su nombre indica, una menor potencia analgésica pero en cambio no son depresores del sistema nervioso central (SNC), 
+                        ni producen prácticamente dependencia. El más utilizado de todos es la codeína. En general, se emplea asociada al paracetamol (o menos frecuentemente al ácido acetilsalicílico y/o al ibuprofeno). 
+                        La asociación con codeína consigue aumentar la potencia del otro analgésico y solo está indicada cuando el tratamiento con un monofármaco no es suficiente. 
+                        El inconveniente es que con ello también se suman o potencian algunos de sus respectivos efectos secundarios.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Los opiáceos de baja potencia poseen, como su nombre indica, una menor potencia analgésica pero en cambio no son depresores del sistema nervioso central (SNC),
+                         ni producen prácticamente dependencia. El más utilizado es la codeína
+                    </i>
+                </p>
+                <br>
+                <b><i>Opioides menores</i></b>
+                <p>
+                    <i>
+                        • Tramadol. Es un analgésico que alivia el dolor actuando sobre el SNC. Ejerce su acción analgésica por un mecanismo dual. 
+                        Por unión a los receptores opiáceos específicos y por bloqueo de la recaptación neuronal de noradrenalina y la liberación de serotonina. 
+                        Es muy eficaz en dolores de moderados a intensos, y no se ha demostrado que genere dependencia ni que presente tolerancia como sucede con los opiáceos puros. 
+                        El tramadol solo, por vía oral, se presenta mayoritariamente en dosis de 50 mg y 75 mg retard. A menudo, 
+                        se asocia con el paracetamol reduciendo así la dosis de tramadol por comprimido a 37,5 mg para poder ajustar mejor la dosis por toma y mejorar el control del dolor. 
+                        Es una asociación que ha demostrado ser eficaz en el tratamiento del dolor tanto agudo como crónico.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <b><i>Analgésicos periféricos</i></b>
+                    <i>
+                        Constituyen una familia heterogénea de fármacos que generalmente presentan a la vez una actividad analgésica, antipirética y antiinflamatoria, aunque en mayor o menor grado cada una de ellas.
+                         Alivian sobre todo el dolor de tipo somático de intensidad leve o moderada, y apenas actúan sobre el dolor visceral. 
+                         Su lugar de acción es preferentemente periférico por lo que no afectan a la consciencia y no producen adicción.  <br>
+                        <br>
+                        Estos fármacos, que en su mayoría podrían ser clasificados también como AINEs (antiinflamatorios no esteroides) se clasifican atendiendo al grupo estructural al que pertenecen. 
+                        Los analgésicos más utilizados en la actualidad pertenecen a los siguientes grupos:
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Paraaminofenoles. Como el paracetamol. Posee propiedades analgésicas y antipiréticas, pero no tiene acción anti-inflamatoria. Tampoco tiene propiedades antiagregantes. Presenta la ventaja de no ser agresivo para la mucosa gástrica, aunque un tratamiento prolongado a dosis altas podría afectar al funcionalismo hepático. Se utiliza tanto sólo como asociado a otros analgésicos.</li>
+                            <li>Derivados del ácido propiónico. Entre ellos destacan por su amplio uso en la actualidad el ibuprofeno, el naproxeno y el dexketoprofeno.
+                                Ibuprofeno es un analgésico, antipirético y antiinflamatorio con una buena relación entre potencia analgésica y tolerancia gástrica. 
+                                En algunas especialidades se encuentra en forma de arginato o lisinato para incrementar su rapidez de absorción,
+                                acelerar la aparición de la acción analgésica y mejorar aún su tolerancia gástrica.
+
+                                Dexketoprofeno (el enantiómero activo del ketoprofeno) se suele utilizar en dolores crónicos con marcado componente inflamatorio. Sin sacrificar la conocida eficacia analgésica del ketoprofeno racémico, su tolerabilidad gástrica es mucho mayor.
+                                Naproxeno tiene una elevada actividad antiinflamatoria, con una tolerabilidad gástrica bastante buena. Su sal sódica presenta unas propiedades analgésicas y antipiréticas notables. Por tanto, es también una excelente alternativa en el tratamiento del dolor con importante componente inflamatorio.
+                            </li>
+                            <li>Pirazolonas. Como la propifenazona y, sobre todo el metamizol magnésico o dipirona. El mecanismo de acción del metamizol es complejo: Actúa sobre ciertos receptores opioides pero también sobre la síntesis de las pros-taglandinas aunque no por la vía de la ciclooxigenasa, por lo que no tiene los efectos secundarios gástricos típicos de los AINEs y finalmente, posee un cierto efecto espasmolítico. Este perfil complejo hace que sea especialmente útil en el dolor provocado por espasmos de vísceras huecas.</li>
+                            <li>Salicilatos. Entre los que se encuentran el ácido acetilsalicílico y el acetil salicilato de lisina. El ácido acetilsalicílico se administra sólo o asociado con diversos principios activos (paracetamol, cafeína, codeína…), como analgésico en mialgias y neuralgias, como antipirético, como antiinflamatorio y también a dosis más altas en el tratamiento de la fiebre reumática. Se utiliza, además, por su acción antitrombótica, ya que inhibe la agregación plaquetaria al reducir la adhesividad de las plaquetas sobre las paredes vasculares.</li>
+
+                        </ul>
+                    </i>
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

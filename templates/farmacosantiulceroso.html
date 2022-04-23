@@ -1,0 +1,92 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antiulceroso</b></i></h1>
+                    <br>
+                    <i>
+                        Los antiulcerosos actúan por diversos mecanismos para la reducción de la acidez gástrica <br>
+                        Los medicamentos antiulcerosos se emplean principalmente en el tratamiento de la úlcera gástrica o y la úlcera duodenal.
+                    </i>
+                </p>  
+                <br>
+                <b>Objetivo:</b>
+                <p>
+                    <i>
+                        Su objetivo es aliviar los síntomas, contribuir a la cicatrización de la úlcera y prevenir que vuelva a aparecer.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        La úlceras de gástricas y dudoenales parecen estar relacionadas con la presencia de la bacteria Helicobacter Pylori y 
+                        por tanto si se detecta la presencia de la bacteria una terapia orientada a su eliminación es muy eficaz para el tratamiento de las úlceras.
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué son los Inhibidores de la bomba de protones?</b>
+                <p>
+                    <i>
+                        El primer grupo de antiulcerosos lo constituyen el Omeprazol y el Lansoprazol. Ambos producen la Inhibición de la "Bomba de protones", 
+                        que constituye el elemento principal del mecanismo secretor de ácido en el estómago. Esta inhibición es irreversible y, por lo tanto, 
+                        el efecto terapéutico dura mucho más de lo que podría esperarse de la corta presencia en el cuerpo de estos medicamentos. <br>
+                        <br>
+                        Los índices de curación son similares a los de los antihistamínicos H2 en úlcera gástrica, pero son algo mejores en úlcera duodenal y significativamente mejores en esofagitis por reflujo. <br>
+                        Como otros grupos de medicamentos que se utilizan en las úlceras (anti H2) son muy eficaces. 
+                        Su característica principal que los diferencia es que el periodo de curación es corto produciendo al tiempo el alivio de la sintomatología y 
+                        el proceso de cicatrización. Los efectos secundarios de importancia no superan el 1% de los casos.
+
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué son los antihistamínicos H2?</b>
+                <p>
+                    <i>
+                        Los antihistamínicos H2 (Cimetidina, Ranitidina, Famotidina, Nizatidina) producen la inhibición de la secreción ácida por bloqueo de los receptores específicos de producción de ácido
+                        (H2 de la histamina). <br> No presentan diferencias significativas entre ellos. Pueden usarse en una o dos tomas diarias con eficacia similar. <br> Los más modernos tienen menos efectos adversos que la cimetidina, 
+                        ya que no alteran el metabolismo del hígado, siendo esto preferible en ancianos y cuando se utilizan a la vez otros medicamentos
+                        (antialérgicos, teofilina, etc..), pero son ventajas poco significativas si tenemos en cuenta que los efectos adversos no superan el 3% de los casos.
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué son los protectores de la mucosa?</b>
+                <p>
+                    <i>
+                        Los protectores de la mucosa (sucralfato) actúan formando como un parche que se deposita en la úlcera y esto impide el ataque de los ácidos del estómago en la zona dañada Estos medicamentos no se absorben.
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué son las prostaglandinas?</b>
+                <p>
+                    <i>
+                        Las prostaglandinas (Misoprostol ) aumentan la resistencia de la pared del estómago a los ácidos y a dosis altas bloquean la secreción de ácidos. 
+                        De eficacia similar a los otros grupos de antiulcerosos pero de más efectos secundarios, ya que suele aparecer diarrea en un 10% de los casos. 
+                        No se puede utilizar en el embarazo. <br> Si parecen ser más efectivos en la prevención de ulceras producidas por los antiinflamatorios.
+                    </i>
+                </p>
+                <br>
+                <b>¿Qué otros fármacos para la úlcera péptica y el reflujo existen?</b>
+                <p>
+                    <i>
+                        
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

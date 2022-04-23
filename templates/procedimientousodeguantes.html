@@ -1,0 +1,80 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Uso de Guantes</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b> <br>
+                        Los guantes son un tipo de equipo de protección personal (EPP). Otros tipos de EPP son las batas, mascarillas y cubiertas para los zapatos y la cabeza. <br>
+                        <br>
+                        Los guantes crean una barrera entre los microbios y las manos. Usarlos en el hospital evita que los microbios se diseminen.
+                        Son parte de este equipo, de protección, generalmente cubren hasta las muñecas y la mano totalmente, deben colocarse por debajo del puño de la manga del mono o bata,
+                         con la finalidad de aislar la piel para evitar el contacto con fluidos. Se fabrican en diferentes materiales, en sanidad se usan de látex, básicamente de dos tipos, los de examen y los quirúrgicos o estériles, 
+                         estos últimos representan la seguridad en materia de asepsia quirúrgica y también protegen al operador contra contagios cuando deben atender enfermos específicos. 
+                        Las manos deben estar limpias antes de su colocación y luego de su eliminación, también deben lavarse.
+                    </i>
+                </p>
+                <br>
+                <b><i>Por qué llevar guantes:</i></b>
+                    <p><i> Utilizar guantes ayuda a proteger de infecciones tanto a los pacientes como a los trabajadores de la salud.</i>
+                </p>
+                <br>
+                <b><i>Cuándo usar guantes:</i></b>
+                <p>
+                    <i>
+                        Los guantes ayudan a mantener las manos limpias y disminuyen la probabilidad de contraer microbios que puedan enfermarlo.
+                        Use guantes cada vez que vaya a tocar sangre, fluidos corporales, tejidos corporales, membranas mucosas o piel lesionada. 
+                        Debe utilizar guantes para este tipo de contacto incluso si el paciente parece saludable y no tiene signos de ningún microbio.
+                    </i>
+                </p>
+                <b><i>Escoger los guantes apropiados</i></b>
+                <br>
+                <p>
+                    <i>
+                        Los recipientes de guantes desechables deben estar disponibles en cualquier sala o área donde tenga lugar la atención a pacientes.
+                        Los guantes vienen en diferentes tamaños, así que asegúrese de escoger el tamaño correcto para que le queden bien.
+                        <ul>
+                            <li>Si los guantes son demasiado grandes, es difícil sostener objetos y es más fácil que los gérmenes penetren en sus guantes.</li>
+                            <li>Los guantes que son demasiado pequeños son más propensos a rasgarse.</li>
+                        </ul>
+                        Algunos procedimientos de limpieza y cuidados requieren guantes estériles o quirúrgicos. Estéril significa "libre de microbios". Estos guantes vienen en tamaños numerados (5.5 a 9). Sepa el tamaño de los suyos con antelación.
+                        Si usted va a manipular productos químicos, revise la hoja de datos de seguridad del material para ver qué tipo de guante va a necesitar. <br>
+                        <br>
+                        <b>NO UTILICE</b>  lociones ni cremas para las manos a base de aceite, a menos que estén aprobadas para su uso con guantes de látex.
+                        Si tiene alergia al látex, utilice guantes que no sean de látex y evite el contacto con otros productos que contengan este material.
+                    </i>
+                </p>
+                <br>
+                <b><i>Quitarse los guantes</i></b> <br>
+                <p><i>
+                    Cuando se quite los guantes, asegúrese de que la parte externa de ellos no toque sus manos desnudas. Siga estos pasos:
+                    <ul>
+                        <li>Con la mano izquierda, agarre la parte exterior del guante derecho a la altura de la muñeca.</li>
+                        <li>Hale hacia las puntas de los dedos. El guante se volteará al revés.</li>
+                        <li> Sostenga el guante vacío con la mano izquierda.</li>
+                        <li>Ponga 2 dedos de la mano derecha en el guante izquierdo.</li>
+                        <li> Hale hacia las puntas de los dedos hasta que haya volteado el guante al revés y lo haya retirado de su mano. El guante derecho estará ahora dentro del guante izquierdo.</li>
+                        <li> Bote los guantes en un recipiente autorizado para desechos.</li>
+                    </ul>
+                    Utilice siempre guantes nuevos para cada paciente. Lávese las manos entre cada paciente para evitar transmitir microbios.
+                </i></p>
+  
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

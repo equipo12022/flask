@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="au theme template">
+        <meta name="author" content="Hau Nguyen">
+        <meta name="keywords" content="au theme template">
+        <!-- Title Page-->
+        <title>Registrarse</title>
+        <!-- Fontfaces CSS-->
+        <link href="/static/css/font-face.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+
+        <!-- Bootstrap CSS-->
+        <link href="/static/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+
+        <!-- Vendor CSS-->
+        <link href="/static/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/wow/animate.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/slick/slick.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+        <link href="/static/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+
+        <!-- Main CSS-->
+        <link href="/static/css/theme.css" rel="stylesheet" media="all">
+
+        <!--  ==== IMAGEN =====-->
+        <link rel="shortcut icon" type="image/png" href="/static/img/login.png">
+        <link rel="apple-touch-icon" href="/static/img/login.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/static/img/login.png">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/static/css/estilo.css" type="text/css">
+    </head>
+
+    <body>
+        <section class="container">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login">
+        
+                        <!-- BUTTON PARA RETROCESO-->
+                        <div class="mt-4 mb-0">
+                            <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                                <button  class="btn btn-outline-info border-2 border_tem"><b><i>Regresar</i></b></button>
+                            </a>
+                        </div>
+                        <div class="login-logo">
+                            <a href="#">
+                                <img src="/static/img/enfermeria1.png" alt="95" width="">
+                            </a>
+                        </div>
+                        <div class="login-form">
+                            <form action="" method="post">
+                                <div class="form-group">
+                                    <label><b><i>Usuario</i></b></label>
+                                    <input class="au-input au-input--full border_tem" type="user" name="user " placeholder="User">
+                                </div>
+                                <div class="form-group">
+                                    <label><b><i>Contraseña</i></b></label>
+                                    <input class="au-input au-input--full border_tem" type="contrasena" name="contrasena" placeholder="Password">
+                                </div>
+                                <div class="login-checkbox">
+                                    
+                                    <label >
+                                        <a><b class="text-dark"><i>No tienes una Cuenta? </i></b></a>
+                                    </label>
+                                    <label>
+                                        <a href="{{url_for('registrarme')}}"><b class="text-info"><i> Registrarme</i></b></a>
+                                    </label>
+                                </div>
+                                <!--<button class="au-btn au-btn--block au-btn--blue2 m-b-20" type="submit"><b><i>Ingresar</i></b></button>-->
+            
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-outline-info border-2 border_tem" type="submit"><b><i>Ingresar</i></b></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- Jquery JS-->
+            <script src="/static/vendor/jquery-3.2.1.min.js"></script>
+            <!-- Bootstrap JS-->
+            <script src="/static/vendor/bootstrap-4.1/popper.min.js"></script>
+            <script src="/static/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+            <!-- Vendor JS       -->
+            <script src="/static/vendor/slick/slick.min.js">
+            </script>
+            <script src="/static/vendor/wow/wow.min.js"></script>
+            <script src="/static/vendor/animsition/animsition.min.js"></script>
+            <script src="/static/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+            </script>
+            <script src="/static/vendor/counter-up/jquery.waypoints.min.js"></script>
+            <script src="/static/vendor/counter-up/jquery.counterup.min.js">
+            </script>
+            <script src="/static/vendor/circle-progress/circle-progress.min.js"></script>
+            <script src="/static/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+            <script src="/static/vendor/chartjs/Chart.bundle.min.js"></script>
+            <script src="/static/vendor/select2/select2.min.js">
+            </script>
+            <!-- Main JS-->
+            <script src="/static/js/main.js"></script>
+        </footer>
+    </body>
+</html>
+
+
+
+  

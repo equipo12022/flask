@@ -1,0 +1,68 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Enemas</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        El enema contiene sales de fosfato, las cuales por acción osmótica atraen el agua hacia el recto, reblandeciendo las heces fecales. Las indicaciones para su aplicación son: 
+                        Constipación intestinal ocasional, preparación para el paciente que va a ser intervenido quirúrgicamente,
+                        evacuar el intestino antes del parto, preparación del colon para la toma de Rx o examen colonoscópico. Generalmente el efecto se logra de 2 a 5 minutos después de la aplicación.
+                    </i>
+                </p>
+                <br>
+                <b>Material y equipo</b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Enema.</li>
+                            <li>Guantes desechables.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Procedimiento</b>
+                <p>
+                    <i>
+                        <ol>
+                            <li>Verificar la indicación médica en el expediente clínico</li>
+                            <li>Verificar la identificación del paciente. Llamarle por su nombre.</li>
+                            <li>Trasladar el equipo y materiales a la unidad del paciente.</li>
+                            <li>Lavarse las manos.</li>
+                            <li>Explicar al paciente en qué consiste la realización del procedimiento, respetando al máximo su intimidad.</li>
+                            <li>Preparar y tener dispuesto el material. La cánula viene prelubricada.</li>
+                            <li>Colocar al paciente en posición de Sims. Decúbito lateral izquierdo con la extremidad inferior derecha flexionada, si no está contraindicado. Descubrir solamente la región.</li>
+                            <li>Sacar el frasco del enema del envase. Retirar la cubierta protectora.</li>
+                            <li>Colocarse los guantes.</li>
+                            <li>Separar con una mano los glúteos para visualizar el orificio anal, con la otra mano introducir suavemente la cánula.</li>
+                            <li>Comprimir el frasco para que permita la entrada del líquido en su totalidad (133 ml).</li>
+                            <li>Pedir al paciente que retenga el líquido durante 5 minutos (el efecto de evacuación se logra de 2 a 5 minutos después de la aplicación).</li>
+                            <li>Desechar el envase conforme a lo estipulado en la NOM 087-ECOL-1995., asimismo quitarse los guantes y desecharlos, aplicando la misma disposición de la norma.</li>
+                            <li>Colocar el cómodo al paciente o ayudarlo a que evacúe en el sanitario el enema y las heces fecales.</li>
+                            <li>Asear al paciente o proporcionarle los medios (papel sanitario) para que él, si está en condiciones, se lo realice solo.</li>
+                            <li>Registrar en el expediente clínico el procedimiento realizado, la cantidad de solución administrada y si se cumplió el objetivo para el cual fue administrada.
+                                Asimismo incluir la fecha, hora, características de la eliminación e incidencias presentadas durante el procedimiento
+                            </li>
+                        </ol>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

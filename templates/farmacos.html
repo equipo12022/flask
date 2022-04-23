@@ -1,0 +1,261 @@
+<!--Aqui colocar la informacion de cada pagina-->
+{% extends 'estructura.html'%}
+{% block contenedor%}
+<!-- INICIO DE SECCTION -->
+<br>
+<section class="container">
+    <!-- contenido de la imagen -->
+    <div class="">
+        <div class="col">
+            <div >
+                <div class="d-grid gap-1">
+                    <h1 class="text-muted text-center"><b><i>FARMACOLOGIA GENERAL</i></b></h1>
+                    <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <!-- CERO TARJETAS -->
+
+    <div class="card-group row ">
+        <div class="row row-cols-2 row-cols-md-3  row-cols-lg-6 ">
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="bg-light">
+                        <img src="/static/img/medic3.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 1 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Analgesico</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosanalgesico')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic2.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 2 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antipiretico</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantipiretico')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/Kerorolaco.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 3 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antidiuretico</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantidiuretico')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic7.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 4 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiarritmias</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiarritmias')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/Kerorolaco.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 5 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiinflamatorios</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiinflamatorios')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic6.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 6 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiespasmodico</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiespasmodico')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="container">
+    <div class="card-group row">
+        <div class="row row-cols-2 row-cols-md-3  row-cols-lg-6 ">
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic9.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 1 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antialergicos</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantialergicos')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic7.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 2 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiinfecciosos</i></b></h5>
+                        <br>
+
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiinfecciosos')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic2.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 3 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antitusivos</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantitusivos')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic8.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 4 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiulceroso</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiulceroso')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic3.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 5 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Antiacido</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosantiacido')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <!-- PROPIEDAD PARA AGREGAR BORDER A LAS TARJETAS    border border-4 rounded-3-->
+                <div class="card  border border-3 border_card" style="width: 13rem;">
+                    <br>
+                    <div class="#">
+                        <img src="/static/img/medic10.jpg" class="card-img-top" class="card-img-top" alt="...">
+                    </div>
+                    <!--  ====CARD 6 ======-->
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-muted"><b><i>Mucoliticos</i></b></h5>
+                        <br>
+                        <div class="d-grid gap-1">
+                            <a href="{{url_for('farmacosmucoliticos')}}" class="btn btn-outline-secondary border border-2 border_tem"><b><i>Ver Informacion</i></b></a>
+                            <!--<a href="#" class="btn btn-light border border-4-dark"><b class="text-dark"><i></i></b></a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<br>
+<br>
+{% endblock%}

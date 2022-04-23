@@ -1,0 +1,152 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Manejo de Equipo</b></i></h1>
+                    <i>
+                        <br>
+                        <b><i>Consepto:</i></b> <br>
+                        El correcto empaque, almacenamiento y distribución de material de productos estériles dentro de toda
+                        institución de salud, tiene como objetivo prevenir su contaminación. De aquí la importancia de aportar las
+                        condiciones o características apropiadas tanto en la Central de Esterilización como en los servicios clínicos
+                        y servicios de apoyo que almacenen material estéril de elaboración institucional, como del material estéril
+                        de fábrica.
+                        <br>
+                        La pérdida de esterilidad en esta fase del proceso esta dada principalmente por la alteración de los
+                        empaques.
+                        <br>
+                        Las recomendaciones sobre la duración de la vigencia de la esterilización de los materiales dependen de
+                        las condiciones de almacenamiento y se han establecido convencionalmente basadas en el cálculo del
+                        tiempo que razonablemente el “EMPAQUE PERMANECE INDEMNE”, en óptimas condiciones de
+                        almacenamiento.
+                        <br>
+                        El almacenamiento del material estéril es importante debido a que la esterilidad puede verse afectada por
+                        las condiciones en que es conservado hasta su uso.
+                    </i>
+                </p>
+                <br>
+                <b><i>Definiciones:</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Empaque indemne: embalaje del material estéril libre o exento de daño. (Desgarro, agujeros,
+                                ruptura de sellos y cierres, libre de suciedad, humedad).
+                            </li>
+                            <li>Área de almacenamiento de material estéril: Es el lugar del hospital diseñado para almacenar
+                                dispositivos y artículos médicos
+                            </li>
+                            <li>Estéril: Ausencia de todas las formas de vida microbiana incluyendo esporas bacterianas y
+                                priones.
+                            </li>
+                            <li>Almacenamiento de material estéril: Procedimiento que permite asegurar la preservación de los
+                                productos estériles hasta el momento de ser usados.
+                            </li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>CAUSAS QUE OCASIONEN PERDIDA DE LA ESTERILIZACIÓN DURANTE EL ALMACENAMIENTO</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Caída de estanterías por el peso de materiales de gran volumen. </li>
+                            <li>Cajas quirúrgicas y paquetes de ropa, especialmente en estanterías que no se encuentran fijas en
+                                la parte posterior del muro de apoyo.
+                            </li>
+                            <li>Pérdida de la indemnidad de los paquetes por fallas en el almacenamiento </li>
+                            <li> Almacenar en forma no holgada</li>
+                            <li>Colocar elásticos en los paquetes o empaques</li>
+                            <li>Derrame de antisépticos sobre empaques</li>
+                            <li>Manipulación excesiva </li>
+                            <li>Manipulación sin lavado de manos</li>
+                            <li>Almacenamiento de paquetes pesados sobre paquetes livianos</li>
+                            <li>Ausencia de aseos terminales calendarizados de áreas almacenamiento</li>
+                            <li>Condiciones ambientales inadecuadas que los afectan, como calor proveniente del sol directo y
+                                humedad, lo que deteriora los empaques</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>MANTENCION DE LA ESTERILIDAD DE LOS MATERIALES</i></b>
+                <p>
+                    <i>
+                        Si el material está empaquetado, permanecerá estéril mientras el empaque reúna las características que
+                        impidan el ingreso de microorganismos.
+                        <br>
+                        La duración de la esterilidad de los materiales esta dada por el tiempo en que el envase permanece
+                        indemne con las condiciones locales de almacenamiento, dependiendo de “eventos relacionados”, como
+                        calidad del empaque, condiciones de almacenamiento, condiciones de transporte y manipulación de los
+                        productos estériles.
+
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <b><i>CONDICIONES DE ALMACENAMIENTO</i></b>
+                    <br>
+                    <i>
+                        Con el fin de asegurar las condiciones en las que se almacena el material estéril, se deben cumplir en
+                        forma permanente los siguientes requisitos:
+                        <ul>
+                            <li>Las estanterías en que se almacene material estéril, deben ser de uso exclusivo para estos fines.</li>
+                            <li>Las estanterías, repisas deben ser de material liso, no poroso y lavable, de material resistente al
+                                peso de los productos a contener.
+                            </li>
+                            <li>Las superficies y estanterías de almacenamiento deben estar limpias y libres de polvo</li>
+                            <li>El acceso debe ser limitado a las personas a cargo del material.</li>
+                            <li>Las estanterías deben estar a 30 cm. del suelo, entre 45 a 100 cm. del techo y 12 cm. de la pared.</li>
+                            <li>No mezclar material estéril con material limpio.</li>
+                            <li>El material debe permanecer almacenado en forma holgada con espacio adecuado entre
+                                paquetes.
+                            </li>
+                            <li>Colocar los paquetes de forma de asegurar que no se compriman ni se caigan.</li>
+                            <li>Verificar semanalmente la fecha de expiración y eliminar el material caduco.</li>
+                            <li>Almacenar colocando los paquetes que expiran primero antes para hacer expedita la rotación.</li>
+                            <li>Almacenar por ítems de materiales.</li>
+                            <li>Si los materiales son pequeños se podrán almacenar en cajas de plástico con tapa, sin
+                                comprimirlos. “No utilizar cajas de materiales que no se puedan lavar y desinfectar”.
+                            </li>
+                            <li>Todo producto estéril, antes de ser almacenado y antes de su uso, debe ser inspeccionado para
+                                comprobar que cumpla con las exigencias de un producto estéril.
+                            </li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b><i>MANEJO DE MATERIAL ESTERIL EN LA CENTRAL DE ESTERILIZACION</i></b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Lavado de manos previo a la manipulación.</li>
+                            <li>Solo manipular artículos que estén fríos.</li>
+                            <li>Evitar sobre manipular material.</li>
+                            <li>Circulación restringida al personal directamente involucrado en la operación. Mantener puertas de
+                                acceso cerradas.
+                            </li>
+                            <li>Evitar dejar elementos recién retirados del autoclave sobre superficies frías.</li>
+                            <li>Se debe contar con un programa para aseos terminales y concurrentes de estanterías y revisión
+                                de la caducidad del material estéril.
+                            </li>
+                            
+                        </ul>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

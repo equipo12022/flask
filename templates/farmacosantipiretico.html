@@ -1,0 +1,138 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antipiretico</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        Estos medicamentos son eficaces para el tratamiento de la fiebre, pero hay que tener en cuenta que por sí solos no resuelven la causa que la provoca.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Los antipiréticos son fármacos cuya composición química está destinada al control de la fiebre. Tienen la capacidad de restablecer la temperatura corporal a niveles normales tras haberse presentado un aumento de la misma. También son conocidos como antitérmicos o antifebriles.
+                        Algunos antipiréticos cuentan también con propiedades analgésicas y antiinflamatorias que reducen el malestar general que suele acompañar a la fiebre. Sin embargo, aunque resultan eficaces para bajar la temperatura, la causa que la ha provocado no desaparece con su sola acción.
+                    </i>
+                </p>
+                <br>
+                <b>¿Cuándo se utilizan los fármacos antipiréticos?</b>
+                <p>
+                    <i>
+                        Hay que recordar que la fiebre se produce cuando el sistema inmunitario identifica agentes patógenos.
+                         Activa entonces ciertos mecanismos del hipotálamo que hacen que la temperatura sobrepase su nivel normal. 
+                         El hipotálamo, que es una estructura del encéfalo, se encarga de regular la temperatura corporal, entre otras funciones.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        En términos generales, se puede considerar que una persona tiene fiebre cuando su temperatura es superior a 38 ºC. Entre 37 y 38 ºC se considera febrícula. Si bien se ha tenido la mala costumbre de administrar estos medicamentos ante cualquier grado de fiebre, lo cierto es que no siempre es lo más indicado.
+                        Como nos indica el artículo ‘Antitérmicos’, publicado en la revista Farmacia Profesional, la fiebre es un mecanismo de protección del cuerpo. Quiere decir que el sistema inmunitario está trabajando para hacer frente a determinados patógenos.
+                        Por otro lado, también puede ser la manifestación de otra enfermedad más grave que esté sucediendo en el organismo. En estos casos, los antitérmicos pueden enmascarar y ocultar otras patologías.
+                    </i>
+                </p>
+                <br>
+                <b>Clasificación de los antipiréticos</b>
+                <p>
+                    <i>
+                        En función de su composición química y de las propiedades que presentan, los antipiréticos más importantes se pueden clasificar en 4 grupos principales: salicilatos, pirazolonas,
+                        aminofenoles y derivados del ácido propiónico.
+                    </i>
+                </p>
+
+                <br>
+                <b>Salicilatos, como el ácido acetilsalicílico</b>
+                <p>
+                    <i>
+                        Los salicilatos tienen acción antipirética, pero también analgésica y antiagregante plaquetaria. A este grupo pertenece la aspirina o ácido acetilsalicílico.
+                        Estos fármacos producen la inhibición irreversible de la cicloxigenasa, que es una enzima que produce prostaglandinas y mediadores de la inflamación.
+                        <ul>
+                            <li>La dosis oral de salicilatos produce efectos en el transcurso de media hora. Sus efectos pueden extenderse hasta por 6 horas.</li>
+                            <li>No deben tomarse con el estómago vacío, sino acompañados de algún alimento.</li>
+                            <li>Los salicilatos deben usarse con precaución, ya que pueden provocar intoxicación.</li>
+                            <li>Están contraindicados en personas con antecedentes de úlceras gastroduodenales, por el daño gástrico que pueden provocar. También, en caso de postoperatorio, por sus propiedades antiagregantes.</li>
+                            <li>No deben ser utilizados en personas asmáticas.</li>
+                            <li>No deben utilizarse en niños con infecciones virales, varicela o gripe porque pueden provocar la aparición del síndrome de Reye.</li>
+                            <li>Se debe tener cuidado si se está en tratamiento con otros medicamentos, ya que pueden producirse interacciones importantes.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Pirazolonas, como el metamizol</b>
+                <p>
+                    <i>
+                        Las pirazolonas se utilizan para el tratamiento de la fiebre cuando se acompaña de dolor, dado que son analgésicos y antipiréticos. Entre los más populares destaca el metamizol o dipirona, también conocido como nolotil.
+                        <ul>
+                            <li>Las pirazolonas actúan de forma similar a la aspirina, pero sus efectos antiinflamatorios son de mayor alcance y son menos lesivos para el estómago.</li>
+                            <li>En algunos países, las pirazolonas se han retirado del mercado porque pueden provocar agranulocitosis y anemia aplásica, entre otras reacciones adversas graves.</li>
+                            <li>Pueden provocar hipotensión y producir reacciones alérgicas. En dosis elevadas, provocan toxicidad hepática y renal.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Aminofenoles, como el paracetamol</b>
+                <p>
+                    <i>
+                        El paracetamol, también conocido como acetaminofén, tiene propiedades antipiréticas y analgésicas. 
+                        A diferencia de los anteriores, no es antiinflamatorio. Se ha consolidado como fármaco de primera elección para el dolor leve o moderado y la fiebre.
+                        <ul>
+                            <li>Inhibe de forma más selectiva que otros fármacos la cicloxigenasa del hipotálamo, lo que implica que apenas produce efectos adversos gastrointestinales ni tiene efectos antiinflamatorios.</li>
+                            <li>No daña la mucosa del estómago, por lo que puede ser administrado en pacientes con problemas gastrointestinales.</li>
+                            <li>Abusar de su consumo puede producir insuficiencia hepática.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Derivados del ácido propiónico, como el ibuprofeno</b>
+                <p>
+                    <i>
+                        Los medicamentos derivados del ácido propiónico, como el ibuprofeno, tienen efectos analgésicos similares a los de la aspirina, pero su acción antiinflamatoria y antipirética es inferior.
+                        <ul>
+                            <li>Forman parte de los antiinflamatorios no esteroideos (AINE) y se utilizan con frecuencia en el tratamiento de los dolores musculares y articulares.</li>
+                            <li>El ácido propiónico se absorbe rápido por vía gastrointestinal. Su administración puede realizarse cada 6 u 8 horas.</li>
+                            <li>Algunos efectos secundarios que pueden producir son, principalmente, de tipo gastrointestinal, como diarrea, vómito, estreñimiento o úlcera péptica.</li>
+                            <li>La ingesta excesiva de este tipo de fármacos puede causar toxicidad.</li>
+                            <li>En casos más graves, este tipo de medicamentos se relacionan con insuficiencia hepática y renal.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Recomendaciones para el uso de antipiréticos</b>
+                <p>
+                    <i>
+                        En términos generales, los antipiréticos deben emplearse solo cuando la fiebre supera los 38 ºC. 
+                        Más específicamente podemos decir que solo deben utilizarse cuando la fiebre suponga un malestar.
+                        <br>
+                        Además, para evitar efectos no deseados, es importante considerar algunas medidas de precaución al administrarlos:
+                        <ul>
+                            <li>Se deben consumir con agua, nunca con café, refrescos o bebidas alcohólicas. En general, se recomienda administrarlos junto con alimentos.</li>
+                            <li>Las personas con gastritis, úlceras o afecciones digestivas solo deben ingerir antipiréticos inofensivos para la mucosa del estómago, como es el caso del paracetamol. Otra opción que puede recomendar el médico es utilizar un protector gástrico, como el omeprazol, en caso de ser necesario.</li>
+                            <li>En caso de embarazo y lactancia deben evitarse si es posible y consultar al médico antes de tomarlos.</li>
+                            <li>Las personas con antecedentes de alergias, problemas respiratorios y problemas renales deben evitar su consumo.</li>
+                            <li>En caso de estar en tratamiento con otros medicamentos, se debe tener cuidado con la administración de fármacos antipiréticos. En cada caso, el médico indicará lo que se debe hacer.</li>
+                            <li>Los niños que padecen infecciones virales, varicela o gripe no deben tomar medicamentos que contengan ácido acetilsalicílico, ya que están relacionados con la aparición del síndrome de Reye.</li>
+                            <li>Si la fiebre es leve -febrícula- puede tratarse con métodos físicos, como los paños de agua fría o baños. Si esta sube, lo recomendable es acudir al médico para que él analice la posible causa. En caso necesario, él recetará el antipirético más aconsejable para cada caso.</li>
+                        </ul>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

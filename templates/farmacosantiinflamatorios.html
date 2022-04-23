@@ -1,0 +1,85 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antiinflamatorios</b></i></h1>
+                    <br>
+                    <i>
+                        Los antiinflamatorios no esteroideos o AINE son los medicamentos analgésicos más utilizados en todo el mundo.
+                        Son unos medicamentos que se emplean para aliviar el dolor derivado de la inflamación de los tejidos,
+                        así como los síntomas de fiebre propios de diversas infecciones, tanto víricas como bacterianas.
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Los AINE se denomina "no esteroideos” para diferenciarlos claramente de los antiinflamatorios naturales del organismo, que son los corticoides que producen las glándulas suprarrenales y que tienen un importante efecto antiinflamatorio.
+                        <b>La acción de los antiinflamatorios no esteroideos se basa en:</b>
+                        <ul>
+                            <li>Alivia el dolor</li>
+                            <li>Reducir la inflamación</li>
+                            <li>Baja la fiebre ( acción antipiretica)</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i>
+                        Los AINE ejercen sus efectos mediante la inhibición de la enzima llamada ciclooxigenasa. Estas sustancias inhiben la actividad tanto de la ciclooxigenasa-1 (COX-1) como a la ciclooxigenasa-2 (COX-2) y,
+                         por lo tanto, la síntesis de prostaglandinas y tromboxanos, que son una serie de sustancia que vehiculizan los procesos inflamatorios.
+                        Se considera que precisamente la inhibición de la COX-2 es la que produce el efecto antiinflamatorio, analgésico y antipirético de los AINE. 
+                        No obstante, la mayoría de ellos inhiben también las COX-1, lo cual es el motivo de los principales riesgos de estos fármacos, como son las hemorragias digestivas y las úlceras gastroduodenales.
+                        El ácido acetilsalicílico o aspirina fue el primer AINE que se descubrió y comercializó. Con el paso de los años se han desarrollado muchos otros fármacos y, de hecho, la aspirina se ha reservado para otras patologías, sobre todo por su papel antiagregante de la sangre. Inicialmente el paracetamol, que es el analgésico y apirético más utilizado, se consideraba también un AINE, pero finalmente se lo ha eliminado de la lista de AINE dado a los escasos efectos antiinflamatorios de la molécula.
+                    </i>
+                </p>
+                <br>
+                <b>Los principales AINE que existen en el mercado son:</b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Acido acetilsalicílico</li>
+                            <li>Indometacina</li>
+                            <li>Diclofenaco</li>
+                            <li>Aceclofenaco</li>
+                            <li>Ketorolaco</li>
+                            <li>Pirioxicam</li>
+                            <li>Meloxicam</li>
+                            <li>Ibuprofeno</li>
+                            <li>Dexketoprofeno</li>
+                            <li>Naproxeno</li>
+                            <li>Celecoxib y derivados</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Buen uso</b>
+                <p>
+                    <i>
+                        Los antiinflamatorios no esteroideos, junto con el paracetamol, están incluidos en el primer escalón de la escala terapéutica de la Organización Mundial de la Salud (OMS). 
+                        Su uso está muy extendido, especialmente el del ibuprofeno en combinación con el paracetamol para controlar la fiebre, o bien para los procesos dolorosos. Pese a que son un buen analgésico,
+                        no dejan de ser fármacos con sus efectos secundarios, con lo cual se tiene que tener precaución a la hora de tomarlos. 
+                        Quizás para un simple dolor de cabeza o unas décimas de fiebre por un proceso infeccioso vírico vale más 
+                        la pena tomar paracetamol en vez de abusar el uso de antiinflamatorios no esteroideos y reservar estos para otras patologías donde la inflamación de los tejidos sea la causa del dolor, 
+                        como en una amigdalitis o en una ciatalgia.
+                    </i>
+                </p>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

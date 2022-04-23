@@ -1,0 +1,110 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('cursos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/cursoembriologia.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5 class="text-dark"><b><i></i></b></h5>
+                            <p class="bg-dark"><b></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                <h1 class="text-center"><i class="text-muted"><b>Embriologia</b></i></h1>
+                <i>
+                    <h6 class=""><b><i>Consepto:</i></b></h6>Es la rama de la biología que se encarga de estudiar la morfogénesis, 
+                    el desarrollo embrionario y nervioso desde la gametogénesis 
+                    hasta el momento del nacimiento de los seres vivos.
+                </p>
+                <br>
+                <p>
+                    <i>
+                        El desarrollo de un embrión se inicia con la fertilización, 
+                        que origina la formación del cigoto. Cuando finaliza el proceso durante 
+                        el cual se generan todas las principales estructuras y órganos del sistema 
+                        (a las 9 semanas aproximadamente), el embrión se denominará feto.
+                    </i>
+                </p>
+                <h6>Riesgos</h6> 
+                <p>
+                    <i>
+                        Durante todas las etapas, el producto está expuesto a diversos riesgos. 
+                        Uno de ellos, sucede durante las primeras etapas; se presenta cuando las células no toman el lugar adecuado dentro del útero, 
+                        esto es, que no se implantan de manera correcta,
+                        trayendo como consecuencia que el embarazo no se lleve a cabo.
+                        En la etapa embrionaria, agrega, el principal riesgo podría ser la infección por teratógenos. Se trata de factores externos que afectan el desarrollo del embrión. 
+                        Un ejemplo podría ser la rubeola o el consumo de fármacos, 
+                        tal vez por no saber la mujer que estaba embarazada, 
+                        o bien que la mujer consuma otro tipo de sustancias como el alcohol o la cocaína, por cuestiones recreativas.
+                    </i>
+                </p>
+                <br>
+                <h6>Desarrollo embrionario</h6>
+                <h5>Etapa 1: Cigoto</h5>
+                <p>
+                    <i>
+                        El día de la extracción de los óvulos comienza el proceso de fecundación in vitro. 
+                        En esta se unen los gametos, bien de forma convencional, es decir, 
+                        mediante una fecundación in vitro en la que se coloca el ovocito con muchos espermatozoides en una placa y se espera a que uno de ellos lo fecunde, 
+                        o bien a través de microinyección espermática (ICSI), inyectando directamente un espermatozoide en el ovocito.
+    
+                        Entre 16 y 18 horas después de inseminar el ovocito, valoramos si este ha fecundado adecuadamente. 
+                        Esta primera etapa del desarrollo embrionario comienza con una sola célula denominada cigoto, 
+                        que contiene dos pronúcleos que son los portadores del material genético (ADN) del óvulo y el espermatozoide.
+
+                    </i>
+                </p>
+                <br>
+                <h5>Etapa 2: Embrión</h5>
+                <p>
+                    <i>
+                        A partir de este momento comienza el proceso de división celular: el cigoto dará lugar a dos células que, 
+                        a su vez, se dividirán y darán lugar a cuatro células, un proceso que ocurre en el segundo día de desarrollo embrionario. 
+                        Las divisiones continúan sucesivamente y, ya en el tercer día de desarrollo, el embrión deberá contar con ocho células. 
+                        En estas etapas de desarrollo embrionario hablamos de embriones.
+                    </i>
+                </p>
+                <br>
+                <h5>Etapa 3: Mórula</h5>
+                <p>
+                    <i>
+                        En el cuarto día de desarrollo, 
+                        el embrión debe alcanzar el estadio de mórula, una estructura que contiene un número elevado de células que se compactan entre ellas.
+                    </i>
+                </p>
+                <br>
+                <h5>Etapa 4: Blastocisto</h5>
+                <p>
+                    <i>
+                        La última etapa del desarrollo -quinto o sexto día de cultivo-, llega cuando el embrión alcanza el estadio de blastocisto, 
+                        que es el nombre que se le da cuando este ya presenta una estructura definida en la que se pueden visualizar y diferenciar las distintas 
+                        clases de células que constituirán el feto, 
+                        así como los tejidos y membranas que lo rodearán y mantendrán en perfectas condiciones durante todo el embarazo.
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

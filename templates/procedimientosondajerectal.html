@@ -1,0 +1,59 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Sondaje Rectal</b></i></h1>
+                    <i>
+                        <b><i>Consepto:</i></b>
+                        <br>
+                        El sondaje rectal consiste en la introducción de una sonda en el recto a través del ano.
+                        Se prescribe su colocación cuando una persona presenta una acumulación grande de gases en el intestino (meteorismo abdominal o flatulencia), situación por otra parte corriente en los postoperatorios. 
+                    </i>
+                </p>
+                <br>
+                <b>Material</b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Sonda rectal estéril (Nelaton).</li>
+                                <li>Lubricante anestésico hidrosoluble.</li>
+                                <li>Gasas.</li>
+                                <li> Cuña.</li>
+                                <li>Guantes.</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Técnica</b>
+                <p>
+                    <i>
+                        <ul>
+                            <li>Colocar al enfermo en posición de Sims izquierda.</li>
+                            <li>Lubricar la sonda en su extremo distal.</li>
+                            <li>Introducir la sonda rectal de 15 a 20 cm.</li>
+                            <li>Colocar el extremo proximal de la sonda en una cuña con gasas, ya que la emisión de gases a veces se acompaña de expulsión de materias líquidas.</li>
+                            <li>Dejar la sonda puesta durante 20 ó 30 minutos.</li>
+                            <li>Para extraer un fecaloma se ha de colocar al paciente en decúbito lateral izquierdo y el material necesario está compuesto por: guantes, lubricantes y una riñonera.</li>
+                        </ul>
+
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

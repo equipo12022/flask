@@ -1,0 +1,75 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('procedimientos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Procedimiento Emergencia</b></i></h1>
+                    <i>
+                        <h6 class=""><b><i>Consepto:</i></b></h6>
+                        La palabra urgencia viene del latín urgentĭa, que significa “apremiante” o “que urge”. Por tanto, cuando hablamos de una urgencia médica nos referimos a una situación que requiere una atención rápida.
+                    </i>
+                </p>
+                <br>
+                <b><i>Cómo actuar en caso de una urgencia médica</i></b>
+                <p><i>
+                    Del mismo modo, si usted cree que necesita asistencia médica urgente, debe acudir al centro de salud o al hospital más cercano para que le vea un médico. No obstante, debe saber que el orden para atender a una persona en Urgencias va en función de su gravedad. Para ello, a los pacientes se les hace un triaje (proceso de valoración clínica preliminar) cuando llegan. Mediante este proceso es posible determinar la urgencia del problema y con ella, el nivel de prioridad en la atención.
+                    En este punto es necesario recordar que las salas de urgencias de los hospitales públicos en España suelen estar siempre saturadas. En la última Encuesta Nacional de Salud, uno de cada tres españoles reconocía haber visitado los servicios de urgencias durante el último año.
+                    Por eso, desde Sanidad se insta a los pacientes a no utilizar estos servicios si su estado no reviste gravedad. Para síntomas como el dolor de garganta, fiebre, tos, estreñimiento, diarrea, conjuntivitis, dolor de espalda, dolor de oídos o vómitos, por ejemplo, los pacientes deberían acudir a los centros de atención primaria.
+                </i></p>
+                <br>
+                <b><i>¿Qué hacer en caso de una urgencia?</i></b><br>
+                <b><i>Antes de la urgencia:</i></b>
+                <p>
+                    <i>
+                        <ol>
+                            <li>Lleva siempre contigo una identificación oficial, contacto de emergencia y datos de tu seguro de gastos médicos (credencial de aseguradora)</li>
+                            <li>Ten siempre a la mano los datos más importantes de tu Historial Médico y el de tus familiares cercanos: (alergias, enfermedades en tratamiento, medicamentos en uso actual, cirugías efectuadas, tipo de sangre).</li>
+                            <li>Conoce a detalle tu póliza de seguro (tipo de cobertura, hospitales y cláusulas de exclusión).</li>
+                        </ol>
+                    </i>
+                </p>
+                <br>
+                <b><i>Durante la urgencia:</i></b>
+                <p>
+                    <i>
+                        <ol>
+                            <li>Mantén la calma</li>
+                            <li>Pide ayuda (teléfonos de emergencia: Servicio Nacional de Emergencias 066, Cruz Roja 065)</li>
+                            <li>Pérdida del Estado de Consciencia, Falta de Aire, Dolor en el Pecho, Imposibilidad para hablar y/o mover alguna parte del cuerpo, son urgencias verdaderas... no dudes, acude a un hospital.</li>
+                            <li>Datos importantes sobre el paciente que deben referirse al equipo de emergencia: Nombre, edad y/o fecha de nacimiento, alergias conocidas, hora de inicio del problema u hora aproximada en que el paciente fue visto bien por última vez (esto es muy importante en el caso de un probable infarto cerebral), medicación actual.</li>
+                            <li>El hospital más cercano, no siempre es el mejor: Los casos de infarto agudo al corazón, infarto cerebral en evolución o trauma mayor deben ser atendidos en Hospitales que cuenten con los recursos humanos y de equipamiento necesarios para brindar el manejo de acuerdo a las mejores prácticas recomendadas a nivel internacional. Asegúrate que los operadores de la ambulancia cumplan con este requisito.</li>
+                            <li>En una Urgencia, tu seguridad y la de los tuyos es lo más importante. No permitas que las prioridades de tu Agente de Seguros interfieran con esto...“exige tus derechos como asegurado”.</li>
+                        </ol>
+                    </i>
+                </p>
+                <br>
+                <b><i>Después de la urgencia:</i></b>
+                <p>
+                    <i>
+                        <ol>
+                            <li>Mantén comunicación con el médico responsable de la atención y/o con el personal asignado para atender tus dudas.</li>
+                            <li>Tienes derecho a recibir, según corresponda, información verbal y por escrito del proceso de atención efectuado, diagnósticos, manejos y recomendaciones posteriores al alta de Urgencias o al ingreso a hospitalización, según sea el caso.</li>
+                            <li>Consulta con el personal administrativo y/o con el personal responsable de atención a pacientes del hospital, sobre el proceso de aviso del siniestro a la aseguradora, así como la documentación que vas a necesitar para que se lleve a cabo el proceso de pago según lo estipule tu póliza.</li>
+
+                        </ol>
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock %}

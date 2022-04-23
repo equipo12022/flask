@@ -1,0 +1,66 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            </div>
+        </div>
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                <h1 class="text-center"><i class="text-"><b> Tabla de Valores de Tencion Arterial </b></i></h1>
+                <br>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/static/img/tabla-presión.png" class="d-block w-100" alt="...">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <i>
+                        <b>Consepto:</b>
+                        <br>
+                        La presión arterial es la fuerza de su sangre al empujar contra las paredes de sus arterias. Cada vez que su corazón late, bombea sangre hacia las arterias. 
+                        Su presión arterial es más alta cuando su corazón late, bombeando la sangre. Esto se llama presión sistólica. Cuando su corazón está en reposo,
+                        entre latidos, su presión arterial baja. Esto se llama presión diastólica.
+                    </i>
+                </p>
+                <br>
+                <b>¿Cuáles son los diferentes tipos de presión arterial alta?</b>
+                <p>
+                    <i>
+                        Hay dos tipos principales de presión arterial alta: Primaria y secundaria.:
+                        <ul>
+                            <li><b>Primaria o esencial: </b><br>  Es el tipo más común de presión arterial alta. Por lo general se desarrolla con el tiempo a medida que envejece</li>
+                            <li><b>Secundaria: </b> <br> Es causada por otra condición médica o el uso de ciertos medicamentos. Por lo general, mejora al tratarse la causa o al dejar de tomar los medicamentos que la provocan</li>
+                        </ul>
+                    </i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

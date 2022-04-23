@@ -1,0 +1,108 @@
+
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+
+<section class="container">
+    <div id="layoutAuthentication">
+        <div id="layoutAuthentication_content">
+            <main>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-7">
+                            <!-- BUTTON PARA RETROCESO-->
+                            <div class="mt-4 mb-0">
+                                <a href="{{url_for('registroaltausuariosistema')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                                    <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+                                </a>
+                            </div>
+                            <div class="card shadow-lg border-3 rounded-lg mt-5 border border-4 border_tem">
+                                <div class="card-header"><h2 class="text-center font-weight-light my-4"><b class="text-muted"><i>Registro de Datos de Usuarios del Sistema</i></b></h2></div>
+                                <div class="card-body">
+                                    <!--HACIA DONDE VOY A REDIRIJIRLO-->
+                                    <form method="POST" action="{{url_for('save_data_usersistema')}}">
+                                        <div class="row mb-3">
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control border_tem" id="nombre" name="nombre" type="text" placeholder="Enter your first name" />
+                                                    <label for="inputFirstName"><b><i>Nombre </i></b></label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control border_tem" id="apellidopaterno" name="apellidopaterno" type="text" placeholder="Enter your last name" />
+                                                    <label for="inputLastName"><b><i>Apellido Paterno</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control border_tem" id="apellidomaterno" name="apellidomaterno" type="text" placeholder="Enter your first name" />
+                                                    <label for="inputFirstName"><b><i>Apellido Materno</i></b></label>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="form-floating">
+                                                    <input class="form-control border_tem" id="email" name="email" type="text" placeholder="Enter your last name" />
+                                                    <label for="inputLastName"><b><i>Email</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control border_tem" id="usuario" name="usuario" type="text" placeholder="Create a password" />
+                                                    <label for="inputPassword"><b><i>Usuario</i></b></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control border_tem" id="contrasena" name="contrasena" type="text" placeholder="Confirm password" />
+                                                    <label for="inputPasswordConfirm"><b ><i>Contraseña</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row mb-3">
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <input class="form-control border_tem" id="telefonoo" name="telefono" type="number" placeholder="Create a password" />
+                                                    <label for="inputPassword"><b><i>Telefono</i></b></label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-floating mb-3 mb-md-0">
+                                                    <select class="form-control border_tem" id="tipo" name="tipo">
+                                                        <option>Administrador</option>
+                                                        <option>Invitado</option>
+                                                    </select>
+                                                    <label for="inputPassword"><b><i>Tipo</i></b></label>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-outline-secondary border-2 border_tem"><b><i>Agregar Usuario</i></b></button>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="card-footer text-center py-3">
+                                    <div class="small"><a href="login.html"></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

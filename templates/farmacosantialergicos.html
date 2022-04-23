@@ -1,0 +1,88 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Antialergicos</b></i></h1>
+                    <i>
+                        Los medicamentos para tratar alergias están disponibles en forma de píldoras, líquidos, inhaladores, aerosoles nasales, gotas para los ojos,
+                        cremas para la piel e inyecciones. Algunos están disponibles sin receta médica; otros, solo con receta. A continuación, 
+                        te ofrecemos un resumen de los tipos de medicamentos para tratar las alergias y por qué se utilizan.
+                    </i>
+                </p>
+                <br>
+                <b>Antihistamínicos</b>
+                <p>
+                    <i>
+                        Los antihistamínicos bloquean la histamina, una sustancia química que produce síntomas y que el sistema inmunitario libera durante una reacción alérgica.
+                    </i>
+                </p>
+                <br>
+                <b>Píldoras y líquidos</b>
+                <p>
+                    <i>
+                        Los antihistamínicos orales se pueden adquirir con o sin receta médica. Alivian el goteo nasal, la picazón o el lagrimeo en los ojos, la urticaria, la hinchazón y otros signos o síntomas de las alergias. 
+                        Ya que algunos de estos medicamentos pueden hacerte sentir somnoliento y cansado, tómalos con precaución cuando necesites conducir o hacer otras actividades que requieran estar alerta.
+                        <b>Los antihistamínicos que tienden a producir somnolencia son:</b>
+                        <ul>
+                            <li>Difenhidramina</li>
+                            <li>Clorfeniramina</li>
+                        </ul>
+                       <b> Estos antihistamínicos son mucho menos propensos a producir somnolencia:</b>
+                       <ul>
+                           <li>Cetirizina (Zyrtec, Zyrtec Allergy)</li>
+                           <li>Desloratadina (Clarinex)</li>
+                           <li>Fexofenadina (Allegra, Allegra Allergy)</li>
+                           <li>Levocetirizina (Xyzal, Xyzal Allergy)</li>
+                           <li>Loratadina (Alavert, Claritin)</li>
+                       </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Atomizadores nasales</b>
+                <p>
+                    <i>
+                        Los atomizadores nasales antihistamínicos alivian los estornudos, la picazón o el goteo nasal, la congestión de los senos nasales y el goteo postnasal. 
+                        Los efectos secundarios de los atomizadores nasales con antihistamínicos pueden incluir gusto amargo, somnolencia o sensación de cansancio.
+                        Los atomizadores nasales con antihistamínicos recetados incluyen:
+                        <ul>
+                            <li>Azelastina (Astelin, Astepro)</li>
+                            <li>Olopatadina (Patanasa)</li>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <b>Gotas para los ojos</b>
+                <p>
+                    <i>
+                        Las gotas oftálmicas antihistamínicas, disponibles con o sin receta médica, pueden aliviar la picazón, el enrojecimiento y la hinchazón de los ojos.
+                        Estas gotas pueden contener una combinación de antihistamínicos y otros medicamentos.
+                        Los efectos secundarios pueden incluir dolor de cabeza y sequedad en los ojos. Si las gotas de antihistamínico pican o arden, 
+                        intenta guardarlas en el refrigerador o prueba usar antes lágrimas artificiales refrigeradas. <br>
+                        <br> <b>Por ejemplo:</b>
+                        <ul>
+                            <li>Ketotifen (Alaway, Zaditor)</li>
+                            <li>Olopatadina (Pataday, Patanol, Pazeo)</li>
+                            <li>Feniramina y nafazolina (Visine, Opcon-A, otras)</li>
+                        </ul>
+                    </i>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

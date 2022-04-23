@@ -1,0 +1,128 @@
+{% extends 'estructura.html' %}
+{% block contenedor %}
+
+<section bg-light>
+    <div class="container">
+
+        <!-- BUTTON PARA RETROCESO-->
+        <div class="mt-4 mb-0">
+            <a href="{{url_for('farmacos')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+                <button  class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+            </a>
+        </div>
+        <br>
+        <!--  CONTENIDO DE LAS IMAGENES -->
+        <div class="row col-sm-12 col-md-12 col-lg-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <p class="list-unstyled small text-muted fs-6">
+                    <h1 class="text-center"><i class="text-muted"><b>Farmaco Mucoliticos</b></i></h1>
+                    <br>
+                    <i>
+                        Los mucolíticos actúan favoreciendo la fluidificación del moco, permitiendo que al ser más fluido sea más fácilmente eliminable por medios físicos. 
+                        Reducen la retención de secreciones y aumentan el aclarado mucociliar, 
+                        reduciendo con ello la frecuencia e intensidad de la tos. Se indican en situaciones con congestión de pecho y con dificultad respiratoria. <br>
+                        <br>
+                        <b>Destacan los siguientes subgrupos de fármacos:</b>
+                        <ul>
+                            <li><b>Derivados de los aminoácidos o azufrados</b></li>
+                            <p>
+                                <i>
+                                    Su mecanismo de acción se debe a que son derivados azufrados con grupos tiólicos (-SH) libres que 
+                                    son capaces de reaccionar con los puentes disulfuro (-S-S) del aminoácido cistina,
+                                    responsable del mantenimiento de la estructura terciaria (tridimensional) de las glucoproteínas constituyentes del moco,
+                                    provocando la desnaturalización de éstas últimas y la fluidificación del moco. En este grupo se encuentran la acetilcisteína y la carboximetilcisteína.
+                                </i>
+                            </p>
+                        </ul>
+
+                        <ul>
+                            <li><b>Derivados de la vasicina</b></li>
+                            <p>
+                                <i>
+                                    La vasicina es un alcaloide de la planta Adhatoda vasica, empleada en el tratamiento del asma en la medicina popular de la India. <br>
+                                    Son sustancias con propiedades intermedias, entre mucolíticas y expectorantes. No se conoce con certeza su mecanismo de acción, 
+                                    aunque se estima que podrían actuar como irritantes locales glandulares, incrementando el volumen de las secreciones (propiedad expectorante) y ejerciendo, además, 
+                                    un efecto mucolítico. Posiblemente, actúan activando la síntesis de sialomucinas en las células globulares, 
+                                    permitiendo que se reestablezca el estado normal de la viscosidad y de la elasticidad de las secreciones bronquiales y facilitando su transporte mucociliar. <br>
+                                    En este grupo se encuadran la bromhexina y el ambroxol. La bromhexina es el fármaco de referencia del grupo y el ambroxol es un metabolito fisiológico de ésta. <br> Curiosamente,
+                                    la bromhexina ha demostrado incrementar la concentración de varios antibióticos en las secreciones bronquiales.  <br>
+                                    Consecuentemente, suele asociarse al uso de antibióticos en el tratamiento de afecciones broncopulmonares de origen bacteriano.
+                                </i>
+                            </p>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><b>Enzimas</b></li>
+                            <p>
+                                <i>
+                                    Destacan la dornasa alfa, la tripsina y la quimiotripsina. 
+                                    La dornasa alfa es una ADNasa que fragmenta las cadenas de ADN, 
+                                    produciendo la licuefacción del moco. Resulta útil en enfermedades, como la fibrosis quística (mucoviscidosis), 
+                                    que se caracterizan por la existencia de un moco hiperviscoso (rico en ADN) por la masiva infiltración de neutrófilos en las vías rspiratorias infectadas. <br>
+                                     Se asocia a mejoría de la función respiratoria y disminución de la incidencia de infecciones.
+                                </i>
+                            </p>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><b>Expectorantes</b></li>
+                            <p>
+                                <i>
+                                    Los expectorantes son sustancias capaces de incrementar el volumen de las secreciones bronquiales o de estimular los mecanismos para su eliminación,
+                                     por expulsión o deglución. Destacan los de activación refleja, acción directa y acción mixta:
+                                    Activación refleja: guayacolato de glicerilo (guaifenesina), ipecacuana, cloruro amónico y polígala (saponinas). <br>
+                                    Acción directa: esencias, bálsamos y vapor de agua. <br>
+                                    Acción mixta: yoduro potásico. <br> 
+                                    La utilidad de los mucolíticos y expectorantes se ha puesto en duda,
+                                     aunque hay numerosos ensayos clínicos que muestran la alta valoración de estos dos tipos de fármacos de acción solapada por parte de los pacientes. <br> 
+                                      De hecho, el único agente mucolítico que presenta una clara eficacia es la dornasa alfa, 
+                                      en el tratamiento de la fibrosis quística. Para el resto de mucolíticos y expectorantes no existe una evidencia clínica demostrable. <br>
+                                       Sin embargo, es frecuente que los pacientes argumenten una impresión subjetiva de mejora de la sintomatología.
+                                </i>
+                            </p>
+                        </ul>
+                        <br>
+                        <ul>
+                            <li><b>Anamnesis</b></li>
+                            <p>
+                                <i>
+                                    Es aconsejable que el farmacéutico reciba la información necesaria para asesorar lo más correctamente al paciente. Debe conocer las siguientes particularidades de cada caso:
+                                    Carácter de la tos (productiva o improductiva).
+                                    Edad del paciente (niño o adulto).
+                                    Frecuencia (esporádica, frecuente o continua).
+                                    Tiempo de evolución de la tos (reciente o duración de más de dos semanas).
+                                    Tabaquismo. <br>
+                                    <br>
+                                    <b>Posibles causas desencadenantes:</b>
+                                    Enfermedades respiratorias de las vías aéreas superiores (sinusitis, goteo nasal, etc.) e inferiores
+                                    (asma, enfisema, etc.).
+                                    Un resfriado, la gripe o un síndrome faríngeo.
+                                    Enfermedades gástricas, muy comúnmente el reflujo gastroesofágico.
+                                    Medicación tomada recientemente (IECA, bloqueadores beta, aerosoles antiasmáticos).
+                                    Ante todo, el farmacéutico debe aconsejar al paciente la visita al médico si la tos no ha mejorado después de cinco días de tratamiento.
+                                </i>
+                            </p>
+                        </ul>
+                    </i>
+                </p>
+                <br>
+                <p>
+                    <i><b>Recomendaciones básicas</b></i>
+                    <br>
+                    <i>
+                        Aumentar la ingesta de líquidos para facilitar la fluidificación del moco. <br>
+                        Evitar las inhalaciones de polvo, tabaco, humo, etc. <br>  
+                        Evitar el aire seco (aire acondicionado). recomendar el uso de humidificadores para niños y personas adultas con problemas respiratorios. <br>
+                        Supresión del tabaco en caso de ser una persona fumadora. <br>
+                        Evitar los cambios bruscos de temperatura. <br>
+                        Si la tos es productiva e impide la conciliación del sueño, se puede sugerir la utilización de dos almohadas en la cama y mantener la habitación ventilada. <br> 
+                        Si la tos es seca pero no persistente, puede ser suficiente la administración de demulcentes o suavizantes como la miel, regaliz, limón, etc. <br> 
+                        Recomendar la inhalación de vapores. Se puede añadir algún producto balsámico (mentol, eucaliptol, etc.), aunque no está claramente demostrado que estos productos incrementen el efecto terapéutico del agua. <br> 
+                    </i>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+{% endblock %}

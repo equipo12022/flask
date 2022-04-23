@@ -1,0 +1,109 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section class="container">
+    <!-- BUTTON PARA RETROCESO-->
+    <div class="mt-4 mb-0">
+        <a href="{{url_for('signosvitales')}}" class="" tabindex="-1" role="button" aria-disabled="true">
+            <button class="btn btn-outline-secondary border-2 border_tem"><b><i>Regresar Anterior</i></b></button>
+        </a>
+    </div>
+    <br>
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
+                <h1 class="mt-4"><b class="text-muted"><i>Tabla de registros normales en Respiracion</i></b></h1>
+                <br>
+                <div class="card mb-4 border border-3 border_card">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Rangos Normales
+                    </div>
+                    <div class="card-body">
+                        <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                        <table id="datatablesSimple">
+                            <thead>
+                                <tr class="table-warning">
+                                    <th><b><i>Edad</i></b></th>
+                                    <th><b><i>Respiracion x Minuto</i></b></th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th><b><i>Edad</i></b></th>
+                                    <th><b><i>Respiracion x Minuto</i></b></th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <tr>
+                                    <th><b><i>Recien Nacido</i></b></th>
+                                    <th><b><i>30-80</i></b></th>
+                                </tr>
+                                <tr>
+                                    <th><b><i>Lactante Menor</i></b></th>
+                                    <th><b><i>20-40</i></b></th>
+                                </tr>
+                                <tr>
+                                    <th><b><i>Lactante Mayor</i></b></th>
+                                    <th><b><i>20-30</i></b></td>
+                                </tr>
+                                <tr>
+                                    <th><b><i>Niños de 2 a 4 años</i></b></th>
+                                    <th><b><i>20-30</i></b></th>
+                                </tr>
+                                <tr>
+                                    <th><b><i>Niños de 6 a 8 años</i></b></th>
+                                    <th><b><i>20-25</i></b></th>
+                                </tr>
+                                <tr>
+                                    <th><b><i>Adultos</i></b></th>
+                                    <th><b><i>15-20</i></b></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <!--  CONTENIDO DE LAS IMAGENES -->
+    <div class="row col-sm-12 col-md-12 col-lg-12">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <p class="list-unstyled small text-muted fs-6">
+                <i>
+                    <h6 class=""><b><i>Consepto:</i></b></h6>
+                    La respiración es un proceso biológico propio de los seres vivos, cuyo objetivo es mantener activo
+                    su organismo (por lo tanto, vivo) a través del intercambio de dióxido de carbono por oxígeno.
+                </i>
+            </p>
+            <br>
+            <b>Proceso de la respiración</b>
+            <p>
+                <i>
+                    El proceso de respirar presenta tres ritmos, que se mencionan a continuación, pero en cuanto a la
+                    biomecánica de la oxigenación son sólo dos, inspiración y espiración.
+                    <ul>
+                        <li><b>Inspiración. </b> <br> También conocida como inhalación. Es el momento donde se trae el
+                            aire desde el exterior hacia el interior del organismo,
+                            mediante la nariz cavidad nasal, bucal, tráquea, laringe y faringe. Lo que ocurre aquí es
+                            que la caja torácica se expande y a su vez el diafragma desciende,
+                            generando el espacio suficiente para que los pulmones se llenen de aire. Aquí tienen una
+                            importante función las variaciones entre las siguientes presiones: pleural,
+                            alveolar y transpulmonar.
+                        </li>
+                        <li><b>Pausa.</b> <br> Instante que permanece dentro el aire.</li>
+                        <li><b>Espiración.</b> <br> O también llamada exhalación. Es el proceso de expulsión del aire y
+                            sus desechos (o lo que no se requiere en el organismo como el dióxido de carbono),
+                            donde el diafragma y las costillas retorna a su lugar, los músculos que se retrajeron en la
+                            inspiración se relajan haciendo que el aire sea expulsado de los pulmones.
+                        </li>
+                    </ul>
+                </i>
+            </p>
+
+        </div>
+    </div>
+</section>
+<br>
+
+{% endblock%}

@@ -1,0 +1,73 @@
+{% extends 'estructura.html'%}
+{% block contenedor%}
+
+<section class="container">
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-5">
+                <h1 class="mt-4"><b class="text-muted"><i>Registros de Entradas por A1</i></b></h1>
+                <br>
+                <ol class="breadcrumb mb-4">
+                    <a href="{{url_for('formularioregistroentrada')}}"> <button type="button" class="btn btn-outline-secondary border-2 border_tem"><b><i>Registrar</i></b></button></a>
+                </ol>
+                <div class="card mb-4 border border-3 border_card">
+                    <div class="card-header">
+                        <i class="fas fa-table me-1"></i>
+                        Registros de Entradas
+                    </div>
+                    <div class="card-body">
+                        <!-- TABLA DE FORMULARIO DE LA BASE DE DATOS DE FIREBASE-->
+                        <table id="datatablesSimple">
+                            <thead class="table-dark">
+                                <tr class="table-success">
+                                    <th><b><i>Puerta</i></b></th>
+                                    <th><b><i>Sala A Cama 1</i></b></th>
+                                    <th><b><i>Distancia cm</i></b></th>
+                                    <th><b><i>Fecha y Hora</i></b></th>
+                                    <th><b><i>Opciones</i></b></th>
+                                </tr>
+                            </thead>
+                            <tfoot>
+                                <tr>
+                                    <th><b><i>Puerta</i></b></th>
+                                    <th><b><i>SalaaCama1</i></b></th>
+                                    <th><b><i>Distancia cm</i></b></th>
+                                    <th><b><i>Fecha y Hora</i></b></th>
+                                    <th><b><i>Opciones</i></b></th>
+                                </tr>
+                            </tfoot>
+                            <tbody>
+                                <!-- REGISTRO 1-->
+                                <!-- OBTENER DATOS DE SENSORES DE FIREBASE-->
+                                {% set contador_sensor=namespace( value=0) %}
+                                    {% for data_sensor in elementos_registro_sensores %}
+                                        <tr>
+                                            <td>A1</td>
+                                            <td>{{data_sensor.Sala_A_Cama_1}}</td>
+                                            <td>{{data_sensor.distanciacm}}</td>
+                                            <td>{{data_sensor.fechaHora}}</td>
+                                            <td><a class="dltBtnV btn btn-outline-warning border_tem"  data-id="{{lista_indice_final_sensores[contador_sensor.value]}}"  href="javascript:void(0)"><b><i>Eliminar</i></b></a></td>
+                                        </tr>
+                                        {% set contador_sensor.value=contador_sensor.value + 1  %}
+                                    {% endfor %}
+   
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</section>
+{% endblock %}
+
+<!-- VENTANA EMERGENTE  PARA ELIMINAR VENTANA-->
+{% block eliminar_ventana %}
+<!-- ----------------Estas librerias son necesarias para la ventana modal------------------------------------------>
+<script
+src="https://code.jquery.com/jquery-3.6.0.js"
+integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/5.5.2/bootbox.min.js"></script>
+<script src="/static/js/eliminar.js"></script>
+{% endblock %}
