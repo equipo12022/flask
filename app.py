@@ -130,26 +130,15 @@ def signosvitales():# FUNCION
 #*================================================================
 #== ROUTE NUMEBER 6 NAME FARMACOS
 @app.route('/farmacos')# RUTA
-def farmacos():# FUNCION
-    return render_template('farmacos.html')#== RETORNO
-#*================================================================
+def farmacos():# FUNCION 
+    return render_template('farmacos.html')#== RETORNO 
+
+#*=====================================  LOGIN ===========================
 #== ROUTE NUMEBER 7 NAME LOGIN
 @app.route('/login')# RUTA
 def login():# FUNCION
+    #db.child("login_user").push()
     db.child("login_user").get().val()
-    if('user' in session):
-        return 'Hi, {}'.format(session['user'])
-    if request.method=='POST':
-        user = request.form.get('User')
-        contrasena = request.form.get('contrasena')
-        try:
-            user = auth.sign_in_with_user_and_contrasena(user,contrasena)
-            session['user'] = user
-            session['contrasena'] = contrasena
-        except:
-            return render_template('login.html')
-    return render_template('login.html')
-
     return render_template('login.html')#== RETORNO
 # NOW WE CREATE THE NAME PATH ENTER
 @app.route('/entrar', methods=['GET', 'POST'])
@@ -163,25 +152,20 @@ def entrar():
        nombre = request.form.get('nombre')
        apellidopaterno = request.form.get('apellidopaterno')
        apellidomaterno = request.form.get('apellidomaterno')
-       usuario = request.form.get('usuario')
+       user = request.form.get('user')
        contrasena = request.form.get('contrasena')
        tipo = request.form.get('tipo')
-       nueva_persona_usuario = Login_users(nombre, apellidopaterno, apellidomaterno, usuario, contrasena, tipo)
+       nueva_persona_usuario = Login_users(nombre, apellidopaterno, apellidomaterno, user, contrasena, tipo)
        objeto_enviar_usuario = json.dumps(nueva_persona_usuario.__dict__)
        formato_usuario = json.loads(objeto_enviar_usuario)
        db.child("login_user").push(formato_usuario)
         #SESSION VARIABLE TO BE ABLE TO IDENTIFY IF THE USER REGISTERED CORRECTLY
        # session['nombreUsuario']=nombre
+       return redirect(url_for('registrarme'))
 
         #return redirect(url_for('entrar'))
     else:
-        return redirect(url_for('inicio'))
-# RUTA PARA BORRAR USUARIO
-@app.route('/delete_user', methods=['GET'])
-def delete_user():
-    session.pop('user')
-    return render_template('registrarme.html')
-
+        return redirect(url_for('login'))
 
 #=================================================================
 # RUTA PARA REGISTRAR USUARIO
@@ -726,7 +710,7 @@ def  formularioregistroentrada():
 def registro_entrada():#---FUNTION
     #db.child("system_Core").child("19-04-22").push({"Sala A Cama 1":"Ocupado"})#--CHILD()
     #return {"Messje":"Conectado"}#-MESSAJE
-    lista_registro_sensores = db.child("system_Core").child("22-04-22").get().val()
+    lista_registro_sensores = db.child("system_Core").child("23-04-22").get().val()
     try:
         lista_indice_sensores = lista_registro_sensores.keys()
         lista_indice_final_sensores = list(lista_indice_sensores)
@@ -738,7 +722,7 @@ def registro_entrada():#---FUNTION
 @app.route('/delete_registro_sensores', methods=['GET'])
 def delete_registro_sensores():
     id = request.args.get("id")
-    db.child("system_Core").child("22-04-22").child(str(id)).remove()
+    db.child("system_Core").child("23-04-22").child(str(id)).remove()
     return redirect(url_for('registro_entrada'))
 
 #RUTA formularioregistroentrada
@@ -754,15 +738,25 @@ def  save_data_registroentrada():
     objeto_enviar_registro_sensores = json.dumps(nuevo_registros_sensores.__dict__)
     #CREAMOS EL FORMATO DE LA CLASE
     formato_registro_sensores = json.loads(objeto_enviar_registro_sensores)
-    db.child("system_Core").child("22-04-22").push(formato_registro_sensores)
+    db.child("system_Core").child("23-04-22").push(formato_registro_sensores)
     #return render_template('registroentrada.html')
     return redirect(url_for('registro_entrada'))
 
 #*************************************************SALIDAS************************************************
 @app.route('/registro_salida', methods=['GET'])#---ROUTE
 def registro_salida():#---FUNTION
-        db.child("system_core").child("22-04-22").push({"Registro":"salida 1"})
+        db.child("system_core").child("23-04-22").push({"Registro":"salida 1"})
         return render_template('registrosalida.html')
+
+# RUTA PARA registrosalaa
+@app.route('/registrosalaa')
+def registrosalaa():
+    return render_template('registrosalaa.html')
+# RUTA PARA registrosalab
+@app.route('/registrosalab')
+def registrosalab():
+    return render_template('registrosalab.html')
+
 #================================SIGNOS VITALES=================================
 # RUTA PARA graficatencionarterial
 @app.route('/tencionarterial')
